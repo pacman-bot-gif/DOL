@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "bef0521f93e476a7d139",
+  "name": "43cca0ded7a27ec721da",
   "position": {
-    "x": 406.99507389162562,
+    "x": 42.5615763546798,
     "y": 163.5960591133005,
-    "z": 13,
+    "z": 14,
     "height": 319.21182266009851,
     "width": 349.80295566502463,
-    "tabOrder": 13
+    "tabOrder": 14
   },
   "visual": {
     "visualType": "donutChart",
@@ -23,11 +23,11 @@
                       "Entity": "DOL"
                     }
                   },
-                  "Property": "ช่วงเวลา"
+                  "Property": "raw_result"
                 }
               },
-              "queryRef": "DOL.ช่วงเวลา",
-              "nativeQueryRef": "ช่วงเวลา",
+              "queryRef": "DOL.raw_result",
+              "nativeQueryRef": "raw_result",
               "active": true
             }
           ]
@@ -125,7 +125,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'การเข้าใช้บริการตามช่วงเวลา'"
+                  "Value": "'สถานะการรับบริการ'"
                 }
               }
             }

@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "bef0521f93e476a7d139",
+  "name": "942f580a68762ed29a12",
   "position": {
-    "x": 406.99507389162562,
-    "y": 163.5960591133005,
-    "z": 13,
-    "height": 319.21182266009851,
-    "width": 349.80295566502463,
-    "tabOrder": 13
+    "x": 42.5615763546798,
+    "y": 494.77832512315268,
+    "z": 15,
+    "height": 288.62068965517238,
+    "width": 714.23645320197045,
+    "tabOrder": 15
   },
   "visual": {
-    "visualType": "donutChart",
+    "visualType": "lineChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DOL"
+                      "Entity": "Calendar"
                     }
                   },
-                  "Property": "ช่วงเวลา"
+                  "Property": "Month"
                 }
               },
-              "queryRef": "DOL.ช่วงเวลา",
-              "nativeQueryRef": "ช่วงเวลา",
+              "queryRef": "Calendar.Month",
+              "nativeQueryRef": "Month",
               "active": true
             }
           ]
@@ -50,50 +50,46 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "จำนวนรวม"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {
-      "labels": [
+      "lineStyles": [
         {
           "properties": {
-            "labelDisplayUnits": {
+            "lineChartType": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "'linear'"
                 }
               }
             },
-            "labelStyle": {
+            "showMarker": {
               "expr": {
                 "Literal": {
-                  "Value": "'Data'"
+                  "Value": "true"
+                }
+              }
+            },
+            "areaShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
           }
         }
       ],
-      "value": [
+      "labels": [
         {
           "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
@@ -125,7 +121,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'การเข้าใช้บริการตามช่วงเวลา'"
+                  "Value": "'จำนวนการเข้าใช้บริการจำแนกตามเดือน'"
                 }
               }
             }

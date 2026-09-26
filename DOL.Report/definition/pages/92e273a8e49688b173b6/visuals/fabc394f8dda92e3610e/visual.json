@@ -1,19 +1,38 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "bef0521f93e476a7d139",
+  "name": "fabc394f8dda92e3610e",
   "position": {
-    "x": 406.99507389162562,
-    "y": 163.5960591133005,
-    "z": 13,
-    "height": 319.21182266009851,
-    "width": 349.80295566502463,
-    "tabOrder": 13
+    "x": 42.5615763546798,
+    "y": 798.02955665024626,
+    "z": 16,
+    "height": 241,
+    "width": 714,
+    "tabOrder": 16
   },
   "visual": {
-    "visualType": "donutChart",
+    "visualType": "hundredPercentStackedBarChart",
     "query": {
       "queryState": {
         "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Property": "DayOfWeek"
+                }
+              },
+              "queryRef": "Calendar.DayOfWeek",
+              "nativeQueryRef": "DayOfWeek",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
           "projections": [
             {
               "field": {
@@ -27,8 +46,7 @@
                 }
               },
               "queryRef": "DOL.ช่วงเวลา",
-              "nativeQueryRef": "ช่วงเวลา",
-              "active": true
+              "nativeQueryRef": "ช่วงเวลา"
             }
           ]
         },
@@ -50,60 +68,7 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "จำนวนรวม"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
-    },
-    "objects": {
-      "labels": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "labelStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Data'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "value": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "visualContainerObjects": {
       "subTitle": [
@@ -125,7 +90,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'การเข้าใช้บริการตามช่วงเวลา'"
+                  "Value": "'เปรียบเทียบสัดส่วนการเข้าใช้บริการตามช่วงเวลา'"
                 }
               }
             }
