@@ -5,6 +5,15 @@ table DOL
 		formatString: #,0
 		lineageTag: da142550-87b0-4d92-83a6-94280d746e6e
 
+	measure 'Cancel Rate อัตราการยกเลิก' =
+			
+			DIVIDE(
+			    CALCULATE(COUNTROWS('DOL'), 'DOL'[service_status_display] = "ยกเลิก/ไม่สำเร็จ"),
+			    COUNTROWS('DOL')
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 0faf5091-677f-492d-8c0f-8cfbc4509084
+
 	column task_id
 		dataType: string
 		lineageTag: f1939569-8279-4610-91e9-6a7e4dade252
@@ -103,11 +112,12 @@ table DOL
 		annotation SummarizationSetBy = Automatic
 
 	column last_process_no
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: c93d9a60-5c30-408a-9e65-2865be2a6986
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: last_process_no
+
+		changedProperty = DataType
 
 		annotation SummarizationSetBy = Automatic
 
