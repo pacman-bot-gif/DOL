@@ -1,0 +1,328 @@
+table DOL
+	lineageTag: 52e3ae27-d155-4dda-81e5-678d0c90b7cb
+
+	measure จำนวนรวม = COUNT(DOL[district_id])
+		formatString: #,0
+		lineageTag: da142550-87b0-4d92-83a6-94280d746e6e
+
+	column task_id
+		dataType: string
+		lineageTag: f1939569-8279-4610-91e9-6a7e4dade252
+		summarizeBy: none
+		sourceColumn: task_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column task_code
+		dataType: int64
+		formatString: #,0
+		lineageTag: 1397ae8c-6ee4-43b2-b647-bef82487423a
+		summarizeBy: sum
+		sourceColumn: task_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_deed
+		dataType: string
+		lineageTag: 224ece33-6db2-48b3-adb0-d8b5b83f3472
+		summarizeBy: none
+		sourceColumn: title_deed
+
+		annotation SummarizationSetBy = Automatic
+
+	column task_remark
+		dataType: string
+		lineageTag: ec25d306-4b07-4c68-b67b-fd393aaaa89e
+		summarizeBy: none
+		sourceColumn: task_remark
+
+		annotation SummarizationSetBy = Automatic
+
+	column document_type_id
+		dataType: string
+		lineageTag: f0957ae4-480c-49e4-b517-5c14164426bf
+		summarizeBy: none
+		sourceColumn: document_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column document_type_name
+		dataType: string
+		lineageTag: f44230cd-05e5-4804-9dd3-92685c59a5da
+		summarizeBy: none
+		sourceColumn: document_type_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_group_id
+		dataType: string
+		lineageTag: edd83961-440e-40ea-b23f-728c94faf620
+		summarizeBy: none
+		sourceColumn: service_group_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_group_name
+		dataType: string
+		lineageTag: ab180c22-afcd-4b14-9879-62103336f0e5
+		summarizeBy: none
+		sourceColumn: service_group_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_type_id
+		dataType: string
+		lineageTag: 6bc9c58a-06fe-4487-bf1b-c1c822e7ab00
+		summarizeBy: none
+		sourceColumn: service_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_type_name
+		dataType: string
+		lineageTag: 3b928cc6-1081-465e-ba5b-177db5452be6
+		summarizeBy: none
+		sourceColumn: service_type_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_dep_id
+		dataType: string
+		lineageTag: 886dad56-48aa-4910-9cc6-5babe34d834f
+		summarizeBy: none
+		sourceColumn: last_dep_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_department_name
+		dataType: string
+		lineageTag: ccc1d660-5aca-4baa-8404-8daad93b8e56
+		summarizeBy: none
+		sourceColumn: last_department_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_process_no
+		dataType: int64
+		formatString: 0
+		lineageTag: c93d9a60-5c30-408a-9e65-2865be2a6986
+		summarizeBy: sum
+		sourceColumn: last_process_no
+
+		annotation SummarizationSetBy = Automatic
+
+	column district_id
+		dataType: string
+		lineageTag: ffbec39a-b2da-454a-a908-4c1ccf384e59
+		summarizeBy: none
+		sourceColumn: district_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column district_name
+		dataType: string
+		lineageTag: 2c81b10d-ee23-42ee-8f53-39fc95868824
+		summarizeBy: none
+		sourceColumn: district_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_time_id
+		dataType: string
+		lineageTag: 196f801a-ea3f-4b32-878b-282d581f8777
+		summarizeBy: none
+		sourceColumn: service_time_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column standard_service_time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 5748aea2-8147-404d-8c4c-4be22ed29987
+		summarizeBy: none
+		sourceColumn: standard_service_time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column standard_days
+		dataType: int64
+		formatString: 0
+		lineageTag: a750e584-1a1f-4456-a5be-3a1044651d55
+		summarizeBy: sum
+		sourceColumn: standard_days
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_key_data
+		dataType: string
+		lineageTag: 06354c79-2bc3-491b-bf18-b86864064700
+		summarizeBy: none
+		sourceColumn: service_key_data
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_id
+		dataType: string
+		lineageTag: c52a7dad-41a6-43c2-bdb8-4c8f6ff46a1e
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_department_name
+		dataType: string
+		lineageTag: 453d7e8f-e94f-4911-b337-d2a177b6bcea
+		summarizeBy: none
+		sourceColumn: employee_department_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c42f5fcb-b2c2-46b5-bd08-be0cb241f659
+		summarizeBy: none
+		sourceColumn: service_date
+
+		variation Variation
+			isDefault
+			relationship: 2f1c8160-ad7f-4f86-ac88-f6bb2bd86fc1
+			defaultHierarchy: LocalDateTable_c7ef254e-dabe-4dcb-baf4-bf8edf2d3822.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column task_date,start_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1d32c7d2-8466-44bc-b2a6-3d92fbc976e3
+		summarizeBy: none
+		sourceColumn: task_date,start_datetime
+
+		variation Variation
+			isDefault
+			relationship: 229c5f69-18e3-425a-97b8-2cb8803d8a29
+			defaultHierarchy: LocalDateTable_c619e9a8-d1d1-4849-85c0-6d1566e69d06.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d29a6f56-9712-489b-a866-7bdffa550b3b
+		summarizeBy: none
+		sourceColumn: start_datetime
+
+		variation Variation
+			isDefault
+			relationship: dbe717f3-3d97-48ec-8f24-71d723dfac79
+			defaultHierarchy: LocalDateTable_3d1cc5d1-a5a4-4a46-bf3d-c66de80cdab3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column last_update_datetime
+		dataType: string
+		lineageTag: 60c598fb-dddc-446c-8897-35db59deb2ba
+		summarizeBy: none
+		sourceColumn: last_update_datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column actual_duration_minutes
+		dataType: string
+		lineageTag: 58e69ac8-bb86-4723-b73d-bf1fed7d375c
+		summarizeBy: none
+		sourceColumn: actual_duration_minutes
+
+		annotation SummarizationSetBy = Automatic
+
+	column raw_result
+		dataType: string
+		lineageTag: bc9b7ddf-2778-458c-bf05-474b64783040
+		summarizeBy: none
+		sourceColumn: raw_result
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_status_display
+		dataType: string
+		lineageTag: cd235dab-884f-49b4-aea8-7cfff6235fc5
+		summarizeBy: none
+		sourceColumn: service_status_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_status_display(ENG)
+		dataType: string
+		lineageTag: 733c47e9-6112-482c-b5d5-cdc7278deb16
+		summarizeBy: none
+		sourceColumn: service_status_display(ENG)
+
+		annotation SummarizationSetBy = Automatic
+
+	column วันในสัปดาห์ = FORMAT('DOL'[service_date], "dddd", "th-TH")
+		lineageTag: b4bc05e7-0b48-4abf-87ba-9a8362da855f
+		summarizeBy: none
+		sortByColumn: ลำดับวัน
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column ลำดับวัน = WEEKDAY('DOL'[service_date], 2)
+		formatString: 0
+		lineageTag: 6508c6c4-3b44-4095-b115-b87618dafb18
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column ลำดับที่ =
+			
+			SWITCH (
+			    [ลำดับวัน],
+			    1, "___",
+			    2, "___",
+			    3, "___",
+			    4, "___",
+			    5, "___",
+			    6, "___",
+			    7, "___",
+			    "N/A"
+			)
+		lineageTag: 317b9a1e-eb74-492b-b8c3-085e506cbd84
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column เลขลำดับสัปดาห์ = ```
+			
+			    VAR CurrentDay = [service_date]
+			    VAR MonthStart = STARTOFMONTH('DOL'[service_date])
+			    RETURN WEEKNUM('DOL'[service_date].[Date], 2) - WEEKNUM(MonthStart, 2) + 1
+			```
+		formatString: 0
+		lineageTag: bd314d6c-50df-4d9b-aee3-d4500d769ca8
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DOL = m
+		mode: import
+		source =
+				let
+				  Source = GoogleSheets.Contents("https://docs.google.com/spreadsheets/d/19AW5VGigzA-erwJo9dq20_FyT9L5GVDmy1zXszxIrVM/edit?usp=sharing"),
+				  #"Navigation 1" = Source{[name = "DOL", ItemKind = "Table"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"task_id", type text}, {"task_code", Int64.Type}, {"title_deed", type any}, {"task_remark", type any}, {"document_type_id", type text}, {"document_type_name", type text}, {"service_group_id", type text}, {"service_group_name", type text}, {"service_type_id", type text}, {"service_type_name", type text}, {"last_dep_id", type text}, {"last_department_name", type text}, {"last_process_no", Int64.Type}, {"district_id", type text}, {"district_name", type text}, {"service_time_id", type text}, {"standard_service_time", type time}, {"standard_days", Int64.Type}, {"service_key_data", type text}, {"employee_id", type text}, {"employee_department_name", type text}, {"service_date", type date}, {"task_date,start_datetime", type datetime}, {"start_datetime", type datetime}, {"last_update_datetime", type text}, {"actual_duration_minutes", type text}, {"raw_result", type text}, {"service_status_display", type text}, {"service_status_display(ENG)", type text}}),
+				    #"Replaced Errors" = Table.ReplaceErrorValues(#"Changed Type", {{"start_datetime", null}}),
+				    #"Replaced Errors1" = Table.ReplaceErrorValues(#"Replaced Errors", {{"task_code", 1}})
+				in
+				    #"Replaced Errors1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
