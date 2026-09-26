@@ -1,8 +1,3 @@
-relationship 2f1c8160-ad7f-4f86-ac88-f6bb2bd86fc1
-	joinOnDateBehavior: datePartOnly
-	fromColumn: DOL.service_date
-	toColumn: LocalDateTable_c7ef254e-dabe-4dcb-baf4-bf8edf2d3822.Date
-
 relationship 229c5f69-18e3-425a-97b8-2cb8803d8a29
 	joinOnDateBehavior: datePartOnly
 	fromColumn: DOL.task_date,start_datetime
@@ -12,4 +7,13 @@ relationship dbe717f3-3d97-48ec-8f24-71d723dfac79
 	joinOnDateBehavior: datePartOnly
 	fromColumn: DOL.start_datetime
 	toColumn: LocalDateTable_3d1cc5d1-a5a4-4a46-bf3d-c66de80cdab3.Date
+
+relationship 3ff7cbb7-7dd2-46ac-a5a4-a9a82c9ec012
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendar.Date
+	toColumn: LocalDateTable_e5a496d0-9ab9-47d8-bbf2-83a4f7eb1e74.Date
+
+relationship 80c3f0d5-590d-72f5-723c-2b904bae142c
+	fromColumn: DOL.service_date
+	toColumn: Calendar.Date
 

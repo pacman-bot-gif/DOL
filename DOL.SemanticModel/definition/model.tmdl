@@ -15,9 +15,10 @@ annotation PBI_ProTooling = ["DevMode"]
 
 ref table DOL
 ref table DateTableTemplate_425d21c5-ab85-4f75-bdc4-2c4d57010118
-ref table LocalDateTable_c7ef254e-dabe-4dcb-baf4-bf8edf2d3822
 ref table LocalDateTable_c619e9a8-d1d1-4849-85c0-6d1566e69d06
 ref table LocalDateTable_3d1cc5d1-a5a4-4a46-bf3d-c66de80cdab3
+ref table Calendar
+ref table LocalDateTable_e5a496d0-9ab9-47d8-bbf2-83a4f7eb1e74
 
 ref cultureInfo en-US
 

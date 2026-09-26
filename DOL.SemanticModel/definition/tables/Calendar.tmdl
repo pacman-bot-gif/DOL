@@ -1,0 +1,95 @@
+table Calendar
+	lineageTag: 0c95baa7-dbd7-49e5-934e-aee3700f2a89
+
+	column Date
+		formatString: General Date
+		lineageTag: 9ef84772-9f70-414a-b5c8-8dcc26180852
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 3ff7cbb7-7dd2-46ac-a5a4-a9a82c9ec012
+			defaultHierarchy: LocalDateTable_e5a496d0-9ab9-47d8-bbf2-83a4f7eb1e74.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 5e515a3b-2c55-4cd5-a8b0-c9bd500dfa4d
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		lineageTag: 2b88b889-ab1a-4fdd-b908-9e1c2aeebfc8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNo
+		formatString: 0
+		lineageTag: e68da3e7-6be2-4b68-80ec-5d75d0d8afab
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MonthNo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeek
+		lineageTag: f57bd4bd-ced7-4165-9f6c-2a21a21a24fa
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DayOfWeek]
+		sortByColumn: DayOfWeekNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekNo
+		formatString: 0
+		lineageTag: 329af8be-be4d-4b41-8fd6-7db1d97814d9
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [DayOfWeekNo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column ลำดับที่ =
+			
+			SWITCH (
+			    [DayOfWeekNo],
+			    1, "Mon",
+			    2, "Tue",
+			    3, "Wed",
+			    4, "Thu",
+			    5, "Fri",
+			    6, "Sat",
+			    7, "Sun",
+			    "N/A"
+			)
+		lineageTag: c34e9051-790f-42c2-9920-c66dd42a6b58
+		summarizeBy: none
+		sortByColumn: DayOfWeekNo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendar = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS (
+				    CALENDAR(DATE(2025, 1, 1), DATE(2026, 12, 31)),
+				    "Year", YEAR([Date]),
+				    "Month", FORMAT([Date], "mmmm"),
+				    "MonthNo", MONTH([Date]),
+				    "DayOfWeek", FORMAT([Date], "dddd"),
+				    "DayOfWeekNo", WEEKDAY([Date], 2)
+				)
+
+	annotation PBI_Id = eb3d7b66da09410187c8813fb8c6e399
+

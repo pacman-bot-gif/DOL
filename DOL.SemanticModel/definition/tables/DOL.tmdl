@@ -186,11 +186,6 @@ table DOL
 		summarizeBy: none
 		sourceColumn: service_date
 
-		variation Variation
-			isDefault
-			relationship: 2f1c8160-ad7f-4f86-ac88-f6bb2bd86fc1
-			defaultHierarchy: LocalDateTable_c7ef254e-dabe-4dcb-baf4-bf8edf2d3822.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -279,33 +274,29 @@ table DOL
 
 		annotation SummarizationSetBy = Automatic
 
-	column ลำดับที่ =
+	column เลขลำดับสัปดาห์ =
 			
-			SWITCH (
-			    [ลำดับวัน],
-			    1, "___",
-			    2, "___",
-			    3, "___",
-			    4, "___",
-			    5, "___",
-			    6, "___",
-			    7, "___",
-			    "N/A"
-			)
-		lineageTag: 317b9a1e-eb74-492b-b8c3-085e506cbd84
-		summarizeBy: none
-
-		annotation SummarizationSetBy = Automatic
-
-	column เลขลำดับสัปดาห์ = ```
-			
-			    VAR CurrentDay = [service_date]
-			    VAR MonthStart = STARTOFMONTH('DOL'[service_date])
-			    RETURN WEEKNUM('DOL'[service_date].[Date], 2) - WEEKNUM(MonthStart, 2) + 1
-			```
+			VAR CurrentDate = 'DOL'[service_date]
+			VAR FirstDayOfMonth = STARTOFMONTH('DOL'[service_date])
+			VAR FirstWeekday = WEEKDAY(FirstDayOfMonth, 2) -- ต้องใส่เลข 2 เพื่อตัดสัปดาห์ตามวันจันทร์
+			RETURN
+			    INT((DAY(CurrentDate) + FirstWeekday - 2) / 7) + 1
 		formatString: 0
 		lineageTag: bd314d6c-50df-4d9b-aee3-d4500d769ca8
 		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column ช่วงเวลา = ```
+			
+			SWITCH (
+			    TRUE(),
+			    HOUR ( 'DOL'[task_date,start_datetime] ) < 12, "เช้า", HOUR ( 'DOL'[task_date,start_datetime] ) < 13, "เที่ยง", 
+			    HOUR ( 'DOL'[task_date,start_datetime] ) < 18, "บ่าย",                                                                                                                          "กลางคืน"
+			)
+			```
+		lineageTag: 766ff87a-8c26-4643-85a9-6263706393d3
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 

@@ -24,11 +24,11 @@
                         "PropertyVariationSource": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "DOL"
+                              "Entity": "Calendar"
                             }
                           },
                           "Name": "Variation",
-                          "Property": "service_date"
+                          "Property": "Date"
                         }
                       },
                       "Hierarchy": "Date Hierarchy"
@@ -37,8 +37,8 @@
                   "Level": "Year"
                 }
               },
-              "queryRef": "DOL.service_date.Variation.Date Hierarchy.Year",
-              "nativeQueryRef": "service_date Year",
+              "queryRef": "Calendar.Date.Variation.Date Hierarchy.Year",
+              "nativeQueryRef": "Date Year",
               "active": true
             }
           ]
@@ -55,11 +55,11 @@
                       "PropertyVariationSource": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "DOL"
+                            "Entity": "Calendar"
                           }
                         },
                         "Name": "Variation",
-                        "Property": "service_date"
+                        "Property": "Date"
                       }
                     },
                     "Hierarchy": "Date Hierarchy"
@@ -175,5 +175,34 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a756f3b361484051cb02",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Calendar"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "Date"
+                  }
+                },
+                "Hierarchy": "Date Hierarchy"
+              }
+            },
+            "Level": "Year"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

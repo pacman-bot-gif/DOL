@@ -4412,22 +4412,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "dol.ลำดับที่": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DOL",
-			          "ConceptualProperty": "ลำดับที่"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "ลำดับที่": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "dol.เลขลำดับสัปดาห์": {
 			      "Definition": {
 			        "Binding": {
