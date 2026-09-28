@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "8949e7bc1040414ec01a",
+  "name": "f2c9b040a7d49070cd20",
   "position": {
-    "x": 1135.5555555555554,
-    "y": 602.22222222222217,
+    "x": 1171.7497348886532,
+    "y": 150.66808059384942,
     "z": 5000,
-    "height": 454.44444444444446,
-    "width": 750,
+    "height": 486.61717921527043,
+    "width": 724.83563096500529,
     "tabOrder": 5000
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Calendar"
+                      "Entity": "DOL"
                     }
                   },
-                  "Property": "MonthThai"
+                  "Property": "service_type_name"
                 }
               },
-              "queryRef": "Calendar.MonthThai",
-              "nativeQueryRef": "MonthThai",
+              "queryRef": "DOL.service_type_name",
+              "nativeQueryRef": "service_type_name",
               "active": true
             }
           ]
@@ -39,14 +39,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DOL"
+                      "Entity": "Calendar"
                     }
                   },
-                  "Property": "service_group_name"
+                  "Property": "Year"
                 }
               },
-              "queryRef": "DOL.service_group_name",
-              "nativeQueryRef": "service_group_name"
+              "queryRef": "Calendar.Year",
+              "nativeQueryRef": "Sum of Year"
             }
           ]
         },
@@ -54,25 +54,38 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DOL"
-                        }
-                      },
-                      "Property": "task_id"
+                    "SourceRef": {
+                      "Entity": "DOL"
                     }
                   },
-                  "Function": 5
+                  "Property": "จำนวนรวม"
                 }
               },
-              "queryRef": "CountNonNull(DOL.task_id)",
-              "nativeQueryRef": "Count of task_id"
+              "queryRef": "DOL.จำนวนรวม",
+              "nativeQueryRef": "จำนวนรวม"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "จำนวนรวม"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -86,23 +99,10 @@
                 }
               }
             },
-            "fontSize": {
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "legend": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "14D"
+                  "Value": "1D"
                 }
               }
             }
@@ -117,14 +117,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'แนวโน้มปริมาณคำขอรายเดือนแยกตามกลุ่มระยะเวลาดำเนินการ'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "18D"
+                  "Value": "'ปริมาณคำขอจำแนกตามประเภทบริการ เปรียบเทียบปี (2025 vs 2026)'"
                 }
               }
             }

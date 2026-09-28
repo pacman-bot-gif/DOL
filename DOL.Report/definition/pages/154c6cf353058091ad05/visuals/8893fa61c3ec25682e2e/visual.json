@@ -110,51 +110,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "89e24439a3bb12c636b0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "document_type_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "50d802389b3d26871eb2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_group_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "fd03f1f5417b010ceb86",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -4931,6 +4931,439 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "dol.filter_date_range": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "Filter_Date_Range"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "filter date range": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Filter_Date_Range": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date range": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "filter moment range": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment range": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "filter period range": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "period range": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "filter date variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "filter date series": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "filter date assortment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "filter date collection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "filter date gamut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "filter date selection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        }
+			      ]
+			    },
+			    "dol.tasks_2025": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "Tasks 2025"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tasks 2025": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "จำนวนการเข้าใช้บริการปี 2025": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dol.tasks_2026": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "Tasks 2026"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tasks 2026": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "จำนวนการเข้าใช้บริการปี 2026": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dol.YoY_change": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "YoY Change"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY change": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yoy modification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yoy variation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yoy transformation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yoy revolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yoy conversion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yoy adjustment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yoy amendment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "yoy difference": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "yoy cash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "ผลต่างจำนวนเคส": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dol.YoY_growth": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "% YoY Growth"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% YoY growth": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage yoy growth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "pct yoy growth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "% yoy development": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "% yoy evolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "% yoy progression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "% yoy growing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "% yoy progress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "% yoy advance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "% yoy tumor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "% yoy cyst": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -5472,6 +5905,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendars_have_dols"
+			        }
+			      ]
+			    },
+			    "dol_has_YoY_growth": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.YoY_growth": {
+			          "Target": {
+			            "Entity": "dol.YoY_growth"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.YoY_growth"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have__YoY_growth"
+			        }
+			      ]
+			    },
+			    "dol_has_YoY_change": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.YoY_change": {
+			          "Target": {
+			            "Entity": "dol.YoY_change"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.YoY_change"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_YoY_change"
+			        }
+			      ]
+			    },
+			    "dol_has_tasks_2026": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.tasks_2026": {
+			          "Target": {
+			            "Entity": "dol.tasks_2026"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.tasks_2026"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_tasks_2026"
+			        }
+			      ]
+			    },
+			    "dol_has_tasks_2025": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.tasks_2025": {
+			          "Target": {
+			            "Entity": "dol.tasks_2025"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.tasks_2025"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_tasks_2025"
+			        }
+			      ]
+			    },
+			    "dol_has_filter_date_range": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.filter_date_range": {
+			          "Target": {
+			            "Entity": "dol.filter_date_range"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.filter_date_range"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_filter_date_range"
 			        }
 			      ]
 			    },

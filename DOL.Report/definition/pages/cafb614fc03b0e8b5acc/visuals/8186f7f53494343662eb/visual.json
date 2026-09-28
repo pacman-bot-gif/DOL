@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "8186f7f53494343662eb",
+  "position": {
+    "x": 15.270413573700955,
+    "y": 617.94273594909862,
+    "z": 0,
+    "height": 137.42331288343559,
+    "width": 289.57055214723925,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "% YoY Growth"
+                }
+              },
+              "queryRef": "DOL.% YoY Growth",
+              "nativeQueryRef": "% YoY Growth"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "% YoY Growth"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "label": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'เปอร์เซ็นต์การเติบโต '"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DOL.% YoY Growth"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "0f0dd2090ae914629803",
+  "position": {
+    "x": 345.11134676564154,
+    "y": 649.50159066808055,
+    "z": 6000,
+    "height": 355.29162248144218,
+    "width": 811.3679745493107,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "service_type_name"
+                }
+              },
+              "queryRef": "DOL.service_type_name",
+              "nativeQueryRef": "ประเภทบริการ",
+              "active": true,
+              "displayName": "ประเภทบริการ"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "Tasks 2025"
+                }
+              },
+              "queryRef": "DOL.Tasks 2025",
+              "nativeQueryRef": "จำนวนการเข้าใช้บริการปี 2025",
+              "displayName": "จำนวนการเข้าใช้บริการปี 2025"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "Tasks 2026"
+                }
+              },
+              "queryRef": "DOL.Tasks 2026",
+              "nativeQueryRef": "จำนวนการเข้าใช้บริการปี 2026",
+              "displayName": "จำนวนการเข้าใช้บริการปี 2026"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "YoY Change"
+                }
+              },
+              "queryRef": "DOL.YoY Change",
+              "nativeQueryRef": "ผลต่างจำนวนเคส ",
+              "displayName": "ผลต่างจำนวนเคส "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "% YoY Growth"
+                }
+              },
+              "queryRef": "DOL.% YoY Growth",
+              "nativeQueryRef": "เปอร์เซ็นต์การเติบโต ",
+              "displayName": "เปอร์เซ็นต์การเติบโต "
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "Tasks 2025"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

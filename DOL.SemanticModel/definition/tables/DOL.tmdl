@@ -64,6 +64,24 @@ table DOL
 			```
 		lineageTag: 7e730829-e6d1-4a38-90de-06b31a0d30f3
 
+	measure 'Tasks 2025' = CALCULATE(COUNTROWS('DOL'), 'Calendar'[Year] = 2025)
+		formatString: #,0
+		lineageTag: c16e6ac9-5c31-4ae3-aedf-6192799d14ec
+
+	measure 'Tasks 2026' = CALCULATE(COUNTROWS('DOL'), 'Calendar'[Year] = 2026)
+		formatString: #,0
+		lineageTag: 46ff6f32-e86c-4f16-89bb-8040e939556d
+
+	measure 'YoY Change' = [Tasks 2026] - [Tasks 2025]
+		formatString: #,0
+		lineageTag: 59bb27af-2cf6-4251-bdc9-c247644b40a5
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure '% YoY Growth' = DIVIDE([Tasks 2026] - [Tasks 2025], [Tasks 2025])
+		formatString: #,0.00%;-#,0.00%;#,0.00%
+		lineageTag: c9830006-5b64-484c-88d4-0525fd1a8d5d
+
 	column task_id
 		dataType: string
 		lineageTag: f1939569-8279-4610-91e9-6a7e4dade252

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "fdf7e2eb26a2d7ced8d3",
+  "position": {
+    "x": 14.252386002120891,
+    "y": 69.225874867444332,
+    "z": 13000,
+    "height": 90.604453870625662,
+    "width": 410.26511134676565,
+    "tabOrder": 13000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "การวิเคราะห์ประเภทเอกสารสิทธิ์และภาระงาน (Document & Workload Profiling)",
+                    "textStyle": {
+                      "fontSize": "16pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

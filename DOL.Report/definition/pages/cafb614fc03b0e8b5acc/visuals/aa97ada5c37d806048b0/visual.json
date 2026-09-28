@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "8949e7bc1040414ec01a",
+  "name": "aa97ada5c37d806048b0",
   "position": {
-    "x": 1135.5555555555554,
-    "y": 602.22222222222217,
-    "z": 5000,
-    "height": 454.44444444444446,
-    "width": 750,
-    "tabOrder": 5000
+    "x": 345.11134676564154,
+    "y": 150.66808059384942,
+    "z": 4000,
+    "height": 486.61717921527043,
+    "width": 811.3679745493107,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "lineChart",
@@ -39,14 +39,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DOL"
+                      "Entity": "Calendar"
                     }
                   },
-                  "Property": "service_group_name"
+                  "Property": "Year"
                 }
               },
-              "queryRef": "DOL.service_group_name",
-              "nativeQueryRef": "service_group_name"
+              "queryRef": "Calendar.Year",
+              "nativeQueryRef": "Sum of Year"
             }
           ]
         },
@@ -54,22 +54,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DOL"
-                        }
-                      },
-                      "Property": "task_id"
+                    "SourceRef": {
+                      "Entity": "DOL"
                     }
                   },
-                  "Function": 5
+                  "Property": "จำนวนรวม"
                 }
               },
-              "queryRef": "CountNonNull(DOL.task_id)",
-              "nativeQueryRef": "Count of task_id"
+              "queryRef": "DOL.จำนวนรวม",
+              "nativeQueryRef": "จำนวนรวม"
             }
           ]
         }
@@ -82,14 +77,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11D"
+                  "Value": "false"
                 }
               }
             }
@@ -99,10 +87,10 @@
       "legend": [
         {
           "properties": {
-            "fontSize": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
+                  "Value": "true"
                 }
               }
             }
@@ -117,14 +105,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'แนวโน้มปริมาณคำขอรายเดือนแยกตามกลุ่มระยะเวลาดำเนินการ'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "18D"
+                  "Value": "'แนวโน้มปริมาณคำขอเปรียบเทียบรายเดือน (2025 vs 2026)'"
                 }
               }
             }
@@ -134,6 +115,13 @@
       "subTitle": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'จะเห็นชัดเจนว่าปี 2026 ช่วงครึ่งปีแรก ปริมาณงานพุ่งสูงกว่าปี 2025 อย่างเห็นได้ชัด'"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {

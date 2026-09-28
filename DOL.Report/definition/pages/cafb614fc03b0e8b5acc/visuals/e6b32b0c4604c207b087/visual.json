@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "e6b32b0c4604c207b087",
+  "position": {
+    "x": 15.270413573700955,
+    "y": 460.14846235418878,
+    "z": 1000,
+    "height": 137.42331288343559,
+    "width": 289.57055214723925,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "YoY Change"
+                }
+              },
+              "queryRef": "DOL.YoY Change",
+              "nativeQueryRef": "YoY Change"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "YoY Change"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DOL.YoY Change"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ผลต่างจำนวนเคส '"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DOL.YoY Change"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

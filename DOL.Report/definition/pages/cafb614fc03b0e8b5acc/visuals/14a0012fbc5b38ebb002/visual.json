@@ -1,38 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "8949e7bc1040414ec01a",
+  "name": "14a0012fbc5b38ebb002",
   "position": {
-    "x": 1135.5555555555554,
-    "y": 602.22222222222217,
-    "z": 5000,
-    "height": 454.44444444444446,
-    "width": 750,
-    "tabOrder": 5000
+    "x": 1171.7497348886532,
+    "y": 649.50159066808055,
+    "z": 9000,
+    "height": 368.525980911983,
+    "width": 724.83563096500529,
+    "tabOrder": 9000
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Calendar"
-                    }
-                  },
-                  "Property": "MonthThai"
-                }
-              },
-              "queryRef": "Calendar.MonthThai",
-              "nativeQueryRef": "MonthThai",
-              "active": true
-            }
-          ]
-        },
-        "Series": {
           "projections": [
             {
               "field": {
@@ -46,7 +27,26 @@
                 }
               },
               "queryRef": "DOL.service_group_name",
-              "nativeQueryRef": "service_group_name"
+              "nativeQueryRef": "service_group_name",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Property": "Year"
+                }
+              },
+              "queryRef": "Calendar.Year",
+              "nativeQueryRef": "Sum of Year"
             }
           ]
         },
@@ -54,25 +54,38 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DOL"
-                        }
-                      },
-                      "Property": "task_id"
+                    "SourceRef": {
+                      "Entity": "DOL"
                     }
                   },
-                  "Function": 5
+                  "Property": "จำนวนรวม"
                 }
               },
-              "queryRef": "CountNonNull(DOL.task_id)",
-              "nativeQueryRef": "Count of task_id"
+              "queryRef": "DOL.จำนวนรวม",
+              "nativeQueryRef": "จำนวนรวม"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "จำนวนรวม"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -83,26 +96,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "legend": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "14D"
                 }
               }
             }
@@ -117,14 +110,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'แนวโน้มปริมาณคำขอรายเดือนแยกตามกลุ่มระยะเวลาดำเนินการ'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "18D"
+                  "Value": "'เปรียบเทียบกลุ่มงาน: เสร็จวันเดียว vs งานหลายวัน (2025 vs 2026)'"
                 }
               }
             }

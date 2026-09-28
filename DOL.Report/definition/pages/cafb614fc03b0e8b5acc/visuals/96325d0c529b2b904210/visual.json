@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "5375bc9e7deacb68b08c",
+  "name": "96325d0c529b2b904210",
   "position": {
-    "x": 1188.8034482158548,
-    "y": 83.3343681424017,
-    "z": 2000,
-    "height": 93.25153374233129,
-    "width": 321.96319018404904,
-    "tabOrder": 2000
+    "x": 365.47189819724287,
+    "y": 37.667020148462356,
+    "z": 7000,
+    "height": 92.493382742191628,
+    "width": 380.137638962414,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,35 +20,18 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Calendar"
+                      "Entity": "DOL"
                     }
                   },
-                  "Property": "MonthThai"
+                  "Property": "service_type_name"
                 }
               },
-              "queryRef": "Calendar.MonthThai",
-              "nativeQueryRef": "MonthThai",
+              "queryRef": "DOL.service_type_name",
+              "nativeQueryRef": "service_type_name",
               "active": true
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Calendar"
-                  }
-                },
-                "Property": "MonthThai"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -71,7 +54,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'เดือน'"
+                  "Value": "'ประเภทบริการ'"
                 }
               }
             },
@@ -92,9 +75,17 @@
           }
         }
       ],
-      "general": [
+      "dropdown": [
         {
-          "properties": {}
+          "properties": {
+            "borderRadius": {
+              "expr": {
+                "Literal": {
+                  "Value": "4L"
+                }
+              }
+            }
+          }
         }
       ],
       "items": [
@@ -109,20 +100,10 @@
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
+      ],
+      "general": [
         {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
+          "properties": {}
         }
       ]
     },

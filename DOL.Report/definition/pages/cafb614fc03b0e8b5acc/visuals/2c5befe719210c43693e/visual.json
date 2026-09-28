@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "2c5befe719210c43693e",
+  "position": {
+    "x": 15.270413573700955,
+    "y": 150.66808059384942,
+    "z": 3000,
+    "height": 139.38650306748465,
+    "width": 289.57055214723925,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "Tasks 2026"
+                }
+              },
+              "queryRef": "DOL.Tasks 2026",
+              "nativeQueryRef": "Tasks 2026"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "Tasks 2026"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DOL.Tasks 2026"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'จำนวนการเข้าใช้บริการปี 2026'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DOL.Tasks 2026"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
