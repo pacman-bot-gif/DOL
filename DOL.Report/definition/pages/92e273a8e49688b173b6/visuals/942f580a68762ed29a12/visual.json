@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "942f580a68762ed29a12",
   "position": {
-    "x": 42.5615763546798,
-    "y": 494.77832512315268,
+    "x": 11.111111111111111,
+    "y": 568.88888888888891,
     "z": 15000,
-    "height": 288.62068965517238,
-    "width": 714.23645320197045,
+    "height": 236.66666666666666,
+    "width": 781.11111111111109,
     "tabOrder": 15000
   },
   "visual": {
@@ -76,6 +76,35 @@
                   "Value": "true"
                 }
               }
+            },
+            "markerColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#369057'"
+                    }
+                  }
+                }
+              }
+            },
+            "areaMatchStrokeColor": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "strokeColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2EBA84'"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -94,6 +123,19 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "71D"
                 }
               }
             }
@@ -122,6 +164,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'จำนวนการเข้าใช้บริการจำแนกตามเดือน'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

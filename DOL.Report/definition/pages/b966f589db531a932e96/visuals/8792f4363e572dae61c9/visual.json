@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "8792f4363e572dae61c9",
   "position": {
-    "x": 390.28511087645194,
-    "y": 81.098204857444557,
+    "x": 0,
+    "y": 101.66666666666667,
     "z": 0,
-    "height": 102.65749073583906,
-    "width": 373.02276336686077,
+    "height": 103.33333333333334,
+    "width": 598.33333333333337,
     "tabOrder": 0
   },
   "visual": {
@@ -134,9 +134,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#01673F'"
                     }
                   }
                 }
@@ -175,34 +174,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a7c2162c7c8a0893a9a4",
-        "field": {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Calendar"
-                      }
-                    },
-                    "Name": "Variation",
-                    "Property": "Date"
-                  }
-                },
-                "Hierarchy": "Date Hierarchy"
-              }
-            },
-            "Level": "Year"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

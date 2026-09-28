@@ -3,10 +3,10 @@
   "name": "8893fa61c3ec25682e2e",
   "position": {
     "x": 14.444444444444445,
-    "y": 602.22222222222217,
+    "y": 644.44444444444446,
     "z": 11000,
-    "height": 454.44444444444446,
-    "width": 532.22222222222217,
+    "height": 412.22222222222223,
+    "width": 460,
     "tabOrder": 11000
   },
   "visual": {
@@ -102,6 +102,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

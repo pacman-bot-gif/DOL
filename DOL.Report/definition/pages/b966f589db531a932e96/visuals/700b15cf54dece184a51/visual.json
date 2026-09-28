@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "700b15cf54dece184a51",
   "position": {
-    "x": 14.192185850052798,
-    "y": 91.235480464625127,
+    "x": 18,
+    "y": 14.666666666666666,
     "z": 14000,
-    "height": 72.9883843717001,
-    "width": 406.5047518479409,
+    "height": 72.666666666666671,
+    "width": 542.66666666666663,
     "tabOrder": 14000
   },
   "visual": {
@@ -21,7 +21,8 @@
                   {
                     "value": "การวิเคราะห์กระบวนการและปัญหาคอขวด (Process & Bottleneck Analysis)",
                     "textStyle": {
-                      "fontSize": "16pt"
+                      "fontWeight": "bold",
+                      "fontSize": "20pt"
                     }
                   }
                 ]

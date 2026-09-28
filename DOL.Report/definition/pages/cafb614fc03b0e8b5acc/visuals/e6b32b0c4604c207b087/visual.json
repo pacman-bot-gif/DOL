@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "e6b32b0c4604c207b087",
   "position": {
-    "x": 15.270413573700955,
-    "y": 460.14846235418878,
+    "x": 15.555555555555555,
+    "y": 733.33333333333337,
     "z": 1000,
-    "height": 137.42331288343559,
-    "width": 289.57055214723925,
+    "height": 153.33333333333334,
+    "width": 448.88888888888886,
     "tabOrder": 1000
   },
   "visual": {
@@ -66,6 +66,27 @@
           "selector": {
             "metadata": "DOL.YoY Change"
           }
+        },
+        {
+          "properties": {
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "30D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
         }
       ],
       "label": [
@@ -81,6 +102,40 @@
           },
           "selector": {
             "metadata": "DOL.YoY Change"
+          }
+        },
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "dd1453e7316079957e6a",
   "position": {
-    "x": 782.595530283422,
-    "y": 92.490699503544946,
+    "x": 598,
+    "y": 102,
     "z": 1000,
-    "height": 92.493382742191628,
-    "width": 380.137638962414,
+    "height": 92.857142857142861,
+    "width": 428.57142857142861,
     "tabOrder": 1000
   },
   "visual": {
@@ -71,6 +71,18 @@
                   "Value": "true"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -97,6 +109,18 @@
                   "Value": "20D"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -108,5 +132,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "3efe2858334bdc508e27",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "service_type_name"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
