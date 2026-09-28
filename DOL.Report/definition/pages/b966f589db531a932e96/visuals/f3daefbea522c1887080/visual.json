@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "f3daefbea522c1887080",
   "position": {
-    "x": 32.5,
-    "y": 477.5,
-    "z": 4,
-    "height": 125,
-    "width": 482.5,
-    "tabOrder": 4
+    "x": 14.444444444444445,
+    "y": 423.25480878026707,
+    "z": 4000,
+    "height": 85.050916496945,
+    "width": 340.20366598778,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -78,6 +78,13 @@
                   "Value": "1D"
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
             }
           },
           "selector": {
@@ -92,6 +99,20 @@
                   "Value": "30D"
                 }
               }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
             }
           },
           "selector": {
@@ -103,6 +124,13 @@
         {
           "properties": {
             "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -126,7 +154,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "30D"
+                  "Value": "20D"
                 }
               }
             },
@@ -140,6 +168,34 @@
           },
           "selector": {
             "metadata": "Min(DOL.service_group_name)"
+          }
+        },
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(DOL.task_id)"
+          }
+        },
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DOL.Cancel Rate อัตราการยกเลิก"
           }
         }
       ]
@@ -223,25 +279,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "657c4d1810da4d4568a0",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "service_group_name"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

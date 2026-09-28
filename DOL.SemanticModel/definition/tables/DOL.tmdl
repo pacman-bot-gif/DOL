@@ -14,6 +14,56 @@ table DOL
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 0faf5091-677f-492d-8c0f-8cfbc4509084
 
+	measure 'Success Rate' =
+			
+			DIVIDE(
+			    CALCULATE(COUNTROWS('DOL'), 'DOL'[service_status_display] = "สำเร็จ"),
+			    COUNTROWS('DOL')
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f8b4736a-b747-4aa4-8c30-1efddac22a46
+
+	measure 'Doing Rate' =
+			
+			DIVIDE(
+			    CALCULATE(COUNTROWS('DOL'), 'DOL'[service_status_display] = "กำลังดำเนินการ"),
+			    COUNTROWS('DOL')
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 2ebeec6a-ae84-4e48-b178-b7ba1a47906d
+
+	measure Filter_Date_Range = ```
+			
+			VAR MinDate = MIN('DOL'[service_date])
+			VAR MaxDate = MAX('DOL'[service_date])
+			
+			VAR MinStr = 
+			    IF(
+			        NOT(ISBLANK(MinDate)),
+			        YEAR(MinDate) & "-" & 
+			        RIGHT("0" & MONTH(MinDate), 2) & "-" & 
+			        RIGHT("0" & DAY(MinDate), 2),
+			        ""
+			    )
+			
+			VAR MaxStr = 
+			    IF(
+			        NOT(ISBLANK(MaxDate)),
+			        YEAR(MaxDate) & "-" & 
+			        RIGHT("0" & MONTH(MaxDate), 2) & "-" & 
+			        RIGHT("0" & DAY(MaxDate), 2),
+			        ""
+			    )
+			
+			RETURN
+			IF(
+			    ISBLANK(MinDate) || ISBLANK(MaxDate),
+			    "-",
+			    MinStr & " → " & MaxStr
+			)
+			```
+		lineageTag: 7e730829-e6d1-4a38-90de-06b31a0d30f3
+
 	column task_id
 		dataType: string
 		lineageTag: f1939569-8279-4610-91e9-6a7e4dade252
@@ -310,6 +360,22 @@ table DOL
 
 		annotation SummarizationSetBy = Automatic
 
+	column Process_Name =
+			
+			SWITCH(
+			    'DOL'[last_process_no],
+			    "3", "ขั้นตอน 3: งานเบ็ดเตล็ด",
+			    "4", "ขั้นตอน 4: งานนิติกรรมและงานด่วน",
+			    "5", "ขั้นตอน 5: งานหนังสือสำคัญ/ประกาศ",
+			    "7", "ขั้นตอน 7: ตรวจสอบรังวัด",
+			    "8", "ขั้นตอน 8: งานรังวัดที่ดิน",
+			    "อื่นๆ"
+			)
+		lineageTag: 4c6e00cd-a024-4d70-8c72-31ef4bdd46fb
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition DOL = m
 		mode: import
 		source =
@@ -319,9 +385,11 @@ table DOL
 				    #"Promoted Headers" = Table.PromoteHeaders(#"Navigation 1", [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"task_id", type text}, {"task_code", Int64.Type}, {"title_deed", type any}, {"task_remark", type any}, {"document_type_id", type text}, {"document_type_name", type text}, {"service_group_id", type text}, {"service_group_name", type text}, {"service_type_id", type text}, {"service_type_name", type text}, {"last_dep_id", type text}, {"last_department_name", type text}, {"last_process_no", Int64.Type}, {"district_id", type text}, {"district_name", type text}, {"service_time_id", type text}, {"standard_service_time", type time}, {"standard_days", Int64.Type}, {"service_key_data", type text}, {"employee_id", type text}, {"employee_department_name", type text}, {"service_date", type date}, {"task_date,start_datetime", type datetime}, {"start_datetime", type datetime}, {"last_update_datetime", type text}, {"actual_duration_minutes", type text}, {"raw_result", type text}, {"service_status_display", type text}, {"service_status_display(ENG)", type text}}),
 				    #"Replaced Errors" = Table.ReplaceErrorValues(#"Changed Type", {{"start_datetime", null}}),
-				    #"Replaced Errors1" = Table.ReplaceErrorValues(#"Replaced Errors", {{"task_code", 1}})
+				    #"Replaced Errors1" = Table.ReplaceErrorValues(#"Replaced Errors", {{"task_code", 1}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Replaced Errors1", each true),
+				    #"Replaced Value" = Table.ReplaceValue(#"Filtered Rows","undefined","อื่นๆ",Replacer.ReplaceText,{"document_type_name"})
 				in
-				    #"Replaced Errors1"
+				    #"Replaced Value"
 
 	annotation PBI_NavigationStepName = Navigation
 

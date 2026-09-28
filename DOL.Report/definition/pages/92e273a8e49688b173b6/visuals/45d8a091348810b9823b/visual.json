@@ -409,62 +409,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "49d0dc6909c4dd362857",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_date"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "f5c76f3005ec87832128",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "เลขลำดับสัปดาห์"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "8e5d31740893eced965d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "cef9d5c072d9a10b1690",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "ลำดับที่"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "44a712b3a29468a5660c",
         "field": {
           "HierarchyLevel": {

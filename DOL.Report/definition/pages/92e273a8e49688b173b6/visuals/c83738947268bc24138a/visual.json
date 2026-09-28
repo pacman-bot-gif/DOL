@@ -4,10 +4,10 @@
   "position": {
     "x": 1131.6666666666667,
     "y": 783.33333333333337,
-    "z": 10,
+    "z": 10000,
     "height": 241.66666666666669,
     "width": 375,
-    "tabOrder": 10
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -408,62 +408,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "4761c18a8e499b90eb50",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "เลขลำดับสัปดาห์"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "f4a327dcdb336b4601e4",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_date"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a4d9fbe6c789b1556922",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5136c85b4b286d75c2e4",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "ลำดับที่"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "828122098019d5a9c993",
         "field": {

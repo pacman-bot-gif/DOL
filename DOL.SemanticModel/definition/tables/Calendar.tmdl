@@ -79,6 +79,47 @@ table Calendar
 
 		annotation SummarizationSetBy = Automatic
 
+	column MonthThai =
+			
+			SWITCH(
+			    'Calendar'[MonthNo],
+			    1, "มกราคม",
+			    2, "กุมภาพันธ์",
+			    3, "มีนาคม",
+			    4, "เมษายน",
+			    5, "พฤษภาคม",
+			    6, "มิถุนายน",
+			    7, "กรกฎาคม",
+			    8, "สิงหาคม",
+			    9, "กันยายน",
+			    10, "ตุลาคม",
+			    11, "พฤศจิกายน",
+			    12, "ธันวาคม"
+			)
+		lineageTag: 55fc8599-2747-479c-b5ae-d7b8870771ff
+		summarizeBy: none
+		sortByColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayThai =
+			
+			SWITCH(
+			    'Calendar'[DayOfWeekNo],
+			    1, "จันทร์",
+			    2, "อังคาร",
+			    3, "พุธ",
+			    4, "พฤหัสบดี",
+			    5, "ศุกร์",
+			    6, "เสาร์",
+			    7, "อาทิตย์"
+			)
+		lineageTag: e82a2c6f-a914-493f-bc2d-e3711b8fcd3b
+		summarizeBy: none
+		sortByColumn: DayOfWeekNo
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Calendar = calculated
 		mode: import
 		source =

@@ -4,10 +4,10 @@
   "position": {
     "x": 42.5615763546798,
     "y": 798.02955665024626,
-    "z": 16,
+    "z": 16000,
     "height": 241,
     "width": 714,
-    "tabOrder": 16
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -23,11 +23,11 @@
                       "Entity": "Calendar"
                     }
                   },
-                  "Property": "DayOfWeek"
+                  "Property": "DayThai"
                 }
               },
-              "queryRef": "Calendar.DayOfWeek",
-              "nativeQueryRef": "DayOfWeek",
+              "queryRef": "Calendar.DayThai",
+              "nativeQueryRef": "DayThai",
               "active": true
             }
           ]

@@ -1,0 +1,160 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "8893fa61c3ec25682e2e",
+  "position": {
+    "x": 14.444444444444445,
+    "y": 602.22222222222217,
+    "z": 11000,
+    "height": 454.44444444444446,
+    "width": 532.22222222222217,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "document_type_name"
+                }
+              },
+              "queryRef": "DOL.document_type_name",
+              "nativeQueryRef": "ประเภทเอกสาร",
+              "displayName": "ประเภทเอกสาร"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "service_group_name"
+                }
+              },
+              "queryRef": "DOL.service_group_name",
+              "nativeQueryRef": "กลุ่มงาน",
+              "displayName": "กลุ่มงาน"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "จำนวนรวม"
+                }
+              },
+              "queryRef": "DOL.จำนวนรวม",
+              "nativeQueryRef": "จำนวนรวม"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "document_type_name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ตารางสรุปข้อมูล'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "89e24439a3bb12c636b0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "document_type_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "50d802389b3d26871eb2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "service_group_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fd03f1f5417b010ceb86",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "จำนวนรวม"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

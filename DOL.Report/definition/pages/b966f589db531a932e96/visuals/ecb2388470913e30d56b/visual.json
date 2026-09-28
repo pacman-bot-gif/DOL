@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "ecb2388470913e30d56b",
   "position": {
-    "x": 550,
-    "y": 215,
-    "z": 5,
-    "height": 512,
-    "width": 866,
-    "tabOrder": 5
+    "x": 380.28513238289207,
+    "y": 215.071283095723,
+    "z": 5000,
+    "height": 419.38900203665986,
+    "width": 766.43584521384923,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -23,11 +23,11 @@
                       "Entity": "DOL"
                     }
                   },
-                  "Property": "last_process_no"
+                  "Property": "Process_Name"
                 }
               },
-              "queryRef": "DOL.last_process_no",
-              "nativeQueryRef": "Sum of last_process_no",
+              "queryRef": "DOL.Process_Name",
+              "nativeQueryRef": "Process_Name",
               "active": true
             }
           ]
@@ -131,6 +131,172 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "service_status_display"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'สำเร็จ'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "service_status_display"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ยกเลิก/ไม่สำเร็จ'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "service_status_display"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'กำลังดำเนินการ'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'จำนวนคำขอจำแนกตามขั้นตอนและสถานะการดำเนินงาน'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
                 }
               }
             }

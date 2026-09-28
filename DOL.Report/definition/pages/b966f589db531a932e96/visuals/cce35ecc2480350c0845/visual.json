@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "cce35ecc2480350c0845",
   "position": {
-    "x": 32.5,
-    "y": 215,
-    "z": 2,
-    "height": 122.5,
-    "width": 290,
-    "tabOrder": 2
+    "x": 14.444444444444445,
+    "y": 631.48925096175617,
+    "z": 2000,
+    "height": 85,
+    "width": 340,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -58,14 +58,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'อัตราการยกเลิก '"
+                  "Value": "'อัตราการยกเลิก'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "30D"
+                  "Value": "20D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -79,13 +86,34 @@
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
                 }
               }
             }
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(DOL.task_id)"
           }
         }
       ],
@@ -95,7 +123,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "30D"
+                  "Value": "20D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
                 }
               }
             }
@@ -103,27 +138,30 @@
           "selector": {
             "metadata": "DOL.Cancel Rate อัตราการยกเลิก"
           }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
         }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e6825f3a1686b171a3bc",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "Cancel Rate อัตราการยกเลิก"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

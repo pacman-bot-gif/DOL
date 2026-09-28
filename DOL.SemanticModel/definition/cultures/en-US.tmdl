@@ -719,6 +719,26 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.736
 			          }
+			        },
+			        {
+			          "ประเภทเอกสารสิทธิ์": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "ประเภทเอกสาร": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -988,6 +1008,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "กลุ่มงาน": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1281,6 +1311,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "ประเภทบริการ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1544,6 +1584,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "แผนก": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2754,96 +2804,22 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "dol.service_date.date_hierarchy": {
+			    "calendar.date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "DOL",
-			          "VariationSource": "service_date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy"
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Date"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "service date hierarchy": {
+			          "date": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "date hierarchy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "dol.service_date.year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DOL",
-			          "VariationSource": "service_date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "service year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "service date year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date year": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "service date yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "service yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "date yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "yr": {
+			          "moment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -2853,475 +2829,263 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "maintenance date year": {
+			          "period": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "examination date year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "svc date year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "service moment year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "maintenance year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "examination year": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
+			            "Weight": 0.714
 			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "dol.service_date.quarter": {
+			    "calendar": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "DOL",
-			          "VariationSource": "service_date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Quarter"
+			          "ConceptualEntity": "Calendar"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "service quarter": {
+			          "calendar": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "service date quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date quarter": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "service date qtr": {
+			          "almanac": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.846
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "service qtr": {
+			          "datebook": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.833
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "date qtr": {
+			          "agenda": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.833
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "qtr": {
+			          "logbook": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.818
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "maintenance date quarter": {
+			          "diary": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "examination date quarter": {
+			          "schedule": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.476
 			          }
 			        },
 			        {
-			          "svc date quarter": {
+			          "timetable": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "service moment quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "maintenance quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "examination quarter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
+			            "Weight": 0.476
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "dol.service_date.month": {
+			    "dol.cancel_rate_อัตราการยกเลิก": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "DOL",
-			          "VariationSource": "service_date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Month"
+			          "ConceptualProperty": "Cancel Rate อัตราการยกเลิก"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "service month": {
+			          "cancel rate อัตราการยกเลิก": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "service date month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date month": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "service date mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "service mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "date mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "mth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "maintenance date month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "examination date month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "svc date month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "service moment month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.609
-			          }
-			        },
-			        {
-			          "maintenance month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "examination month": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "dol.service_date.day": {
+			    "dol.process_name": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "DOL",
-			          "VariationSource": "service_date",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Day"
+			          "ConceptualProperty": "Process_Name"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "service day": {
+			          "process name": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "day": {
-			            "State": "Generated"
+			          "Process_Name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "service date day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date day": {
+			          "process": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "maintenance date day": {
+			          "process nickname": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "examination date day": {
+			          "process title": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "svc date day": {
+			          "process label": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "service moment day": {
+			          "process tag": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "maintenance day": {
+			          "procedure": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "examination day": {
+			          "development": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "svc day": {
+			          "progression": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "moment day": {
+			          "method": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "package date day": {
+			          "manner": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.491
 			          }
 			        },
 			        {
-			          "repair date day": {
+			          "activity": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.491
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
+			    },
+			    "dol.ช่วงเวลา": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "ช่วงเวลา"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ช่วงเวลา": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    },
 			    "dol.task_datestart_datetime": {
 			      "Definition": {
@@ -4427,9 +4191,980 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "calendar.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.month_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "MonthNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MonthNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "month number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.day_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "DayOfWeek"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day of week": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DayOfWeek": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.day_of_week_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "DayOfWeekNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day of week no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DayOfWeekNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "day of week number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.ลำดับที่": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "ลำดับที่"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ลำดับที่": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dol.success_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "Success Rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "success rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "success degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "success frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "success percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "success ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "success quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "success amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "dol.doing_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "Doing Rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "doing rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "doing degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "doing frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "doing percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "doing ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "doing quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "doing amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.month_thai": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "MonthThai"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month thai": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MonthThai": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "thai": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mth thai": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.day_thai": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "DayThai"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day thai": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DayThai": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "thai": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "calendar_date_date_hierarchy_has_calendar_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.day": {
+			          "Target": {
+			            "Entity": "calendar.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.month": {
+			          "Target": {
+			            "Entity": "calendar.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.quarter": {
+			          "Target": {
+			            "Entity": "calendar.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.year": {
+			          "Target": {
+			            "Entity": "calendar.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendar_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date": {
+			          "Target": {
+			            "Entity": "calendar.date"
+			          }
+			        },
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "dol_start_datetime_date_hierarchy_has_dol_start_datetime_day": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol.start_datetime.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dol.start_datetime.date_hierarchy"
+			          }
+			        },
+			        "dol.start_datetime.day": {
+			          "Target": {
+			            "Entity": "dol.start_datetime.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol.start_datetime.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dol.start_datetime.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_datetime_date_hierarchies_have_start_datetime_days"
+			        }
+			      ]
+			    },
+			    "dol_start_datetime_date_hierarchy_has_dol_start_datetime_month": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol.start_datetime.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dol.start_datetime.date_hierarchy"
+			          }
+			        },
+			        "dol.start_datetime.month": {
+			          "Target": {
+			            "Entity": "dol.start_datetime.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol.start_datetime.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dol.start_datetime.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "start_datetime_date_hierarchies_have_start_datetime_months"
+			        }
+			      ]
+			    },
 			    "dol_start_datetime_date_hierarchy_has_dol_start_datetime_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "DOL"
@@ -4694,20 +5429,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "dol_service_date_date_hierarchy_has_dol_service_date_day": {
+			    "dol_has_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "DOL"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dol.service_date.date_hierarchy": {
+			        "dol": {
 			          "Target": {
-			            "Entity": "dol.service_date.date_hierarchy"
+			            "Entity": "dol"
 			          }
 			        },
-			        "dol.service_date.day": {
+			        "calendar": {
 			          "Target": {
-			            "Entity": "dol.service_date.day"
+			            "Entity": "calendar"
 			          }
 			        }
 			      },
@@ -4715,32 +5450,45 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dol.service_date.date_hierarchy"
+			              "Role": "dol"
 			            },
 			            "Object": {
-			              "Role": "dol.service_date.day"
+			              "Role": "calendar"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "service_date_hierarchies_have_service_days"
+			          "ID": "dols_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "dol"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_dols"
 			        }
 			      ]
 			    },
-			    "dol_service_date_date_hierarchy_has_dol_service_date_month": {
+			    "calendar_has_day_thai": {
 			      "Binding": {
-			        "ConceptualEntity": "DOL"
+			        "ConceptualEntity": "Calendar"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dol.service_date.date_hierarchy": {
+			        "calendar": {
 			          "Target": {
-			            "Entity": "dol.service_date.date_hierarchy"
+			            "Entity": "calendar"
 			          }
 			        },
-			        "dol.service_date.month": {
+			        "calendar.day_thai": {
 			          "Target": {
-			            "Entity": "dol.service_date.month"
+			            "Entity": "calendar.day_thai"
 			          }
 			        }
 			      },
@@ -4748,32 +5496,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dol.service_date.date_hierarchy"
+			              "Role": "calendar"
 			            },
 			            "Object": {
-			              "Role": "dol.service_date.month"
+			              "Role": "calendar.day_thai"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "service_date_hierarchies_have_service_months"
+			          "ID": "calendars_have_day_thai"
 			        }
 			      ]
 			    },
-			    "dol_service_date_date_hierarchy_has_dol_service_date_quarter": {
+			    "calendar_has_month_thai": {
 			      "Binding": {
-			        "ConceptualEntity": "DOL"
+			        "ConceptualEntity": "Calendar"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dol.service_date.date_hierarchy": {
+			        "calendar": {
 			          "Target": {
-			            "Entity": "dol.service_date.date_hierarchy"
+			            "Entity": "calendar"
 			          }
 			        },
-			        "dol.service_date.quarter": {
+			        "calendar.month_thai": {
 			          "Target": {
-			            "Entity": "dol.service_date.quarter"
+			            "Entity": "calendar.month_thai"
 			          }
 			        }
 			      },
@@ -4781,32 +5529,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dol.service_date.date_hierarchy"
+			              "Role": "calendar"
 			            },
 			            "Object": {
-			              "Role": "dol.service_date.quarter"
+			              "Role": "calendar.month_thai"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "service_date_hierarchies_have_service_quarters"
+			          "ID": "calendars_have_month_thai"
 			        }
 			      ]
 			    },
-			    "dol_service_date_date_hierarchy_has_dol_service_date_year": {
+			    "dol_has_doing_rate": {
 			      "Binding": {
 			        "ConceptualEntity": "DOL"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dol.service_date.date_hierarchy": {
+			        "dol": {
 			          "Target": {
-			            "Entity": "dol.service_date.date_hierarchy"
+			            "Entity": "dol"
 			          }
 			        },
-			        "dol.service_date.year": {
+			        "dol.doing_rate": {
 			          "Target": {
-			            "Entity": "dol.service_date.year"
+			            "Entity": "dol.doing_rate"
 			          }
 			        }
 			      },
@@ -4814,32 +5562,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dol.service_date.date_hierarchy"
+			              "Role": "dol"
 			            },
 			            "Object": {
-			              "Role": "dol.service_date.year"
+			              "Role": "dol.doing_rate"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "service_date_hierarchies_have_service_years"
+			          "ID": "dols_have_doing_rate"
 			        }
 			      ]
 			    },
-			    "dol_service_date_has_date_hierarchy": {
+			    "dol_has_success_rate": {
 			      "Binding": {
 			        "ConceptualEntity": "DOL"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dol.service_date": {
+			        "dol": {
 			          "Target": {
-			            "Entity": "dol.service_date"
+			            "Entity": "dol"
 			          }
 			        },
-			        "dol.service_date.date_hierarchy": {
+			        "dol.success_rate": {
 			          "Target": {
-			            "Entity": "dol.service_date.date_hierarchy"
+			            "Entity": "dol.success_rate"
 			          }
 			        }
 			      },
@@ -4847,15 +5595,213 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dol.service_date"
+			              "Role": "dol"
 			            },
 			            "Object": {
-			              "Role": "dol.service_date.date_hierarchy"
+			              "Role": "dol.success_rate"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "service_dates_have_service_date_hierarchies"
+			          "ID": "dols_have_success_rate"
+			        }
+			      ]
+			    },
+			    "calendar_has_ลำดับที่": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.ลำดับที่": {
+			          "Target": {
+			            "Entity": "calendar.ลำดับที่"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.ลำดับที่"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_ลำดับที่"
+			        }
+			      ]
+			    },
+			    "calendar_has_day_of_week_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.day_of_week_no": {
+			          "Target": {
+			            "Entity": "calendar.day_of_week_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.day_of_week_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_day_of_week_no"
+			        }
+			      ]
+			    },
+			    "calendar_has_day_of_week": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.day_of_week": {
+			          "Target": {
+			            "Entity": "calendar.day_of_week"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.day_of_week"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_day_of_week"
+			        }
+			      ]
+			    },
+			    "calendar_has_month_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.month_no": {
+			          "Target": {
+			            "Entity": "calendar.month_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.month_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_month_noes"
+			        }
+			      ]
+			    },
+			    "calendar_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.month": {
+			          "Target": {
+			            "Entity": "calendar.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_months"
+			        }
+			      ]
+			    },
+			    "calendar_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.year": {
+			          "Target": {
+			            "Entity": "calendar.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_years"
 			        }
 			      ]
 			    },
@@ -4889,39 +5835,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dols_have_เลขลำดับสัปดาห์"
-			        }
-			      ]
-			    },
-			    "dol_has_ลำดับที่": {
-			      "Binding": {
-			        "ConceptualEntity": "DOL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dol": {
-			          "Target": {
-			            "Entity": "dol"
-			          }
-			        },
-			        "dol.ลำดับที่": {
-			          "Target": {
-			            "Entity": "dol.ลำดับที่"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dol"
-			            },
-			            "Object": {
-			              "Role": "dol.ลำดับที่"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dols_have_ลำดับที่"
 			        }
 			      ]
 			    },
@@ -5252,6 +6165,138 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dols_have_task_datestart_datetimes"
+			        }
+			      ]
+			    },
+			    "dol_has_ช่วงเวลา": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.ช่วงเวลา": {
+			          "Target": {
+			            "Entity": "dol.ช่วงเวลา"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.ช่วงเวลา"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_ช่วงเวลา"
+			        }
+			      ]
+			    },
+			    "dol_has_process_name": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.process_name": {
+			          "Target": {
+			            "Entity": "dol.process_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.process_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_process_names"
+			        }
+			      ]
+			    },
+			    "dol_has_cancel_rate_อัตราการยกเลิก": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.cancel_rate_อัตราการยกเลิก": {
+			          "Target": {
+			            "Entity": "dol.cancel_rate_อัตราการยกเลิก"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.cancel_rate_อัตราการยกเลิก"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_cancel_rate_อัตราการยกเลิก"
+			        }
+			      ]
+			    },
+			    "calendar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.date": {
+			          "Target": {
+			            "Entity": "calendar.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_dates"
 			        }
 			      ]
 			    },
@@ -6152,72 +7197,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "dols_are_serviced_on_standard_service_times"
-			        }
-			      ]
-			    },
-			    "dol_start_datetime_date_hierarchy_has_dol_start_datetime_month": {
-			      "Binding": {
-			        "ConceptualEntity": "DOL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dol.start_datetime.date_hierarchy": {
-			          "Target": {
-			            "Entity": "dol.start_datetime.date_hierarchy"
-			          }
-			        },
-			        "dol.start_datetime.month": {
-			          "Target": {
-			            "Entity": "dol.start_datetime.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dol.start_datetime.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "dol.start_datetime.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_datetime_date_hierarchies_have_start_datetime_months"
-			        }
-			      ]
-			    },
-			    "dol_start_datetime_date_hierarchy_has_dol_start_datetime_day": {
-			      "Binding": {
-			        "ConceptualEntity": "DOL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dol.start_datetime.date_hierarchy": {
-			          "Target": {
-			            "Entity": "dol.start_datetime.date_hierarchy"
-			          }
-			        },
-			        "dol.start_datetime.day": {
-			          "Target": {
-			            "Entity": "dol.start_datetime.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dol.start_datetime.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "dol.start_datetime.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "start_datetime_date_hierarchies_have_start_datetime_days"
 			        }
 			      ]
 			    }

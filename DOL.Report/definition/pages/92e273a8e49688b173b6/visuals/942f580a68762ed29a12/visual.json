@@ -4,10 +4,10 @@
   "position": {
     "x": 42.5615763546798,
     "y": 494.77832512315268,
-    "z": 15,
+    "z": 15000,
     "height": 288.62068965517238,
     "width": 714.23645320197045,
-    "tabOrder": 15
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "lineChart",
@@ -23,11 +23,11 @@
                       "Entity": "Calendar"
                     }
                   },
-                  "Property": "Month"
+                  "Property": "MonthThai"
                 }
               },
-              "queryRef": "Calendar.Month",
-              "nativeQueryRef": "Month",
+              "queryRef": "Calendar.MonthThai",
+              "nativeQueryRef": "MonthThai",
               "active": true
             }
           ]

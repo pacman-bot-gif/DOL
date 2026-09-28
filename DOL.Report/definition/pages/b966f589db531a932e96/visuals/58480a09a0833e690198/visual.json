@@ -1,0 +1,133 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "58480a09a0833e690198",
+  "position": {
+    "x": 1153.6262572789835,
+    "y": 639.32239280042347,
+    "z": 8000,
+    "height": 415.71201694018,
+    "width": 727.75013234515609,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "document_type_name"
+                }
+              },
+              "queryRef": "DOL.document_type_name",
+              "nativeQueryRef": "ประเภทเอกสารสิทธิ์",
+              "displayName": "ประเภทเอกสารสิทธิ์"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "service_type_name"
+                }
+              },
+              "queryRef": "DOL.service_type_name",
+              "nativeQueryRef": "ประเภทบริการ",
+              "displayName": "ประเภทบริการ"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DOL"
+                    }
+                  },
+                  "Property": "last_department_name"
+                }
+              },
+              "queryRef": "DOL.last_department_name",
+              "nativeQueryRef": "แผนก",
+              "displayName": "แผนก"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DOL"
+                        }
+                      },
+                      "Property": "task_id"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "DOL.task_id",
+              "nativeQueryRef": "จำนวนเคส",
+              "displayName": "จำนวนเคส"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DOL"
+                      }
+                    },
+                    "Property": "task_id"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ตารางสรุปรายละเอียดคดีค้าง/ยกเลิก'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
