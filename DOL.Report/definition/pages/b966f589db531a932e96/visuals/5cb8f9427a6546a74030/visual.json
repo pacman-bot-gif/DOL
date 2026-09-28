@@ -167,8 +167,39 @@
             "metadata": "DOL.Cancel Rate อัตราการยกเลิก"
           }
         }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "319d5de00dba569b301b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Doing Rate"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

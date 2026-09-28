@@ -138,23 +138,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "470ca2392c446ae06021",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "Filter_Date_Range"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

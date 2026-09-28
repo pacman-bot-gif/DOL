@@ -378,5 +378,56 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "dfec71ba1d48d71059ea",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "last_department_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "31b94bf653a5d374d2ea",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "service_status_display"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "cd8067047a313d363011",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "task_id"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

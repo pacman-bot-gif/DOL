@@ -160,8 +160,39 @@
             "id": "default"
           }
         }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "08ec8ee0e77354d74ba4",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Cancel Rate อัตราการยกเลิก"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

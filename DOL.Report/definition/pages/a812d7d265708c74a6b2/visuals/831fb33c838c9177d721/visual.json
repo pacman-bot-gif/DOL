@@ -250,20 +250,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "1ae29cc22a729d826023",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

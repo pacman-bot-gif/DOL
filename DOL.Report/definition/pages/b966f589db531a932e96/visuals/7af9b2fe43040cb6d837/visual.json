@@ -153,8 +153,39 @@
             "metadata": "Min(DOL.task_id)"
           }
         }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b8f8e77975b30c4807b0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Success Rate"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

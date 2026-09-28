@@ -145,23 +145,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c0f6d824a2ba3b903300",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_type_name"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

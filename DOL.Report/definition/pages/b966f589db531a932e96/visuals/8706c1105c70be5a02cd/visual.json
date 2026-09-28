@@ -223,6 +223,34 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "38f436a7bb0902ad220b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "service_type_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "54911f89ed91ba902d1c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "จำนวนรวม"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

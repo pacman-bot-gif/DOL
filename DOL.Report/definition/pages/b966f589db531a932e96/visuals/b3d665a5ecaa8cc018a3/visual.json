@@ -151,23 +151,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6331d570ce676a7e2ddd",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "MonthThai"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

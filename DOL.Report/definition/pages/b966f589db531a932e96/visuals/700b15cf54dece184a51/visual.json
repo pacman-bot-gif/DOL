@@ -25,7 +25,8 @@
                       "fontSize": "20pt"
                     }
                   }
-                ]
+                ],
+                "horizontalTextAlignment": "center"
               }
             ]
           }

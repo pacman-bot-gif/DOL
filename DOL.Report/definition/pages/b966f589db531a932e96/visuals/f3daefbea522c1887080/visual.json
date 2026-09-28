@@ -198,6 +198,19 @@
             "metadata": "DOL.Cancel Rate อัตราการยกเลิก"
           }
         }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -279,6 +292,25 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "7e221d209c4240481008",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DOL"
+                  }
+                },
+                "Property": "service_group_name"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

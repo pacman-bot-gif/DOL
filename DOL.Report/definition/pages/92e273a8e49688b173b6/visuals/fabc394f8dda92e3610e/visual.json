@@ -240,5 +240,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d57e9150b099312776c8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "DayThai"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5d4b177556e3e4dae530",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "ช่วงเวลา"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "69e010b03710c446d995",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "จำนวนรวม"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
