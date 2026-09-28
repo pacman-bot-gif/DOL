@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "2c5befe719210c43693e",
   "position": {
-    "x": 15.555555555555555,
-    "y": 394.44444444444446,
+    "x": 32.857142857142861,
+    "y": 394.28571428571433,
     "z": 3000,
-    "height": 153.33333333333334,
-    "width": 456.66666666666663,
+    "height": 152.85714285714286,
+    "width": 440,
     "tabOrder": 3000
   },
   "visual": {
@@ -172,5 +172,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "242874976b1685e63a0b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Tasks 2026"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
