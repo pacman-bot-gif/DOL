@@ -62,48 +62,21 @@
             },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DOL"
-                        }
-                      },
-                      "Property": "task_id"
+                    "SourceRef": {
+                      "Entity": "DOL"
                     }
                   },
-                  "Function": 5
+                  "Property": "จำนวนรวม"
                 }
               },
-              "queryRef": "DOL.task_id",
-              "nativeQueryRef": "จำนวนเคส",
-              "displayName": "จำนวนเคส"
+              "queryRef": "DOL.จำนวนรวม",
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "DOL"
-                      }
-                    },
-                    "Property": "task_id"
-                  }
-                },
-                "Function": 5
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "visualContainerObjects": {
@@ -201,20 +174,15 @@
         "type": "Categorical"
       },
       {
-        "name": "f40f8d8744b1c2873404",
+        "name": "4aeedc205dcc3b0d96d4",
         "field": {
-          "Aggregation": {
+          "Measure": {
             "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "task_id"
+              "SourceRef": {
+                "Entity": "DOL"
               }
             },
-            "Function": 5
+            "Property": "จำนวนรวม"
           }
         },
         "type": "Advanced"

@@ -54,46 +54,23 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DOL"
-                        }
-                      },
-                      "Property": "task_id"
+                    "SourceRef": {
+                      "Entity": "DOL"
                     }
                   },
-                  "Function": 5
+                  "Property": "จำนวนรวม"
                 }
               },
-              "queryRef": "CountNonNull(DOL.task_id)",
-              "nativeQueryRef": "Count of task_id"
+              "queryRef": "DOL.จำนวนรวม",
+              "nativeQueryRef": "จำนวนรวม"
             }
           ]
         }
       },
       "sortDefinition": {
         "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "DOL"
-                      }
-                    },
-                    "Property": "task_id"
-                  }
-                },
-                "Function": 5
-              }
-            },
-            "direction": "Descending"
-          },
           {
             "field": {
               "Column": {
@@ -489,20 +466,15 @@
         "type": "Categorical"
       },
       {
-        "name": "642046b16314089075ee",
+        "name": "518c75034003907143b6",
         "field": {
-          "Aggregation": {
+          "Measure": {
             "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "task_id"
+              "SourceRef": {
+                "Entity": "DOL"
               }
             },
-            "Function": 5
+            "Property": "จำนวนรวม"
           }
         },
         "type": "Advanced"
