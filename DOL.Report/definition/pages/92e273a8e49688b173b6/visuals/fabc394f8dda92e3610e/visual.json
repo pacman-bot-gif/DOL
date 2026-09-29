@@ -237,6 +237,19 @@
             }
           }
         }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -244,7 +257,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "d57e9150b099312776c8",
+        "name": "011b9098610e84c70602",
         "field": {
           "Column": {
             "Expression": {
@@ -258,7 +271,7 @@
         "type": "Categorical"
       },
       {
-        "name": "5d4b177556e3e4dae530",
+        "name": "c6aec4ab0163dd416000",
         "field": {
           "Column": {
             "Expression": {
@@ -272,7 +285,7 @@
         "type": "Categorical"
       },
       {
-        "name": "69e010b03710c446d995",
+        "name": "ebd7cbc22dbe6390761e",
         "field": {
           "Measure": {
             "Expression": {

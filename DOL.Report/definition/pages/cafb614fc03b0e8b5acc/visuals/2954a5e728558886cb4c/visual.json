@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "2954a5e728558886cb4c",
   "position": {
-    "x": 32.857142857142861,
-    "y": 562.85714285714289,
+    "x": 14.589665653495441,
+    "y": 563.161094224924,
     "z": 2000,
-    "height": 148.57142857142858,
-    "width": 431.42857142857144,
+    "height": 148.8145896656535,
+    "width": 449.36170212765956,
     "tabOrder": 2000
   },
   "visual": {
@@ -161,6 +161,22 @@
             }
           }
         }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -168,7 +184,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "936e73e69e1e2a4188cc",
+        "name": "95b0c3d1ded068c652ea",
         "field": {
           "Measure": {
             "Expression": {

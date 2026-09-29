@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "8186f7f53494343662eb",
   "position": {
-    "x": 15.555555555555555,
-    "y": 910,
+    "x": 14.589665653495441,
+    "y": 910.39513677811544,
     "z": 0,
-    "height": 147.77777777777777,
-    "width": 456.66666666666663,
+    "height": 147.35562310030394,
+    "width": 458.11550151975683,
     "tabOrder": 0
   },
   "visual": {
@@ -110,8 +110,58 @@
             "id": "default"
           }
         }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "divider": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e12686c90a728b656e18",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "เปอร์เซ็นต์การเติบโต_Display"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

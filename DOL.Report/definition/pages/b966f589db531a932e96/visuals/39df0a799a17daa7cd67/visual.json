@@ -211,6 +211,22 @@
             }
           }
         }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -294,7 +310,7 @@
         "howCreated": "User"
       },
       {
-        "name": "a54164b68d69960c05e4",
+        "name": "086d6ad0d088aaa2bb94",
         "field": {
           "Aggregation": {
             "Expression": {

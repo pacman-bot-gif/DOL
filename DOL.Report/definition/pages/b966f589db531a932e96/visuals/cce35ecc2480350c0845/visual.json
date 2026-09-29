@@ -173,6 +173,22 @@
             }
           }
         }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -180,7 +196,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "08ec8ee0e77354d74ba4",
+        "name": "9256cdcf558719130a54",
         "field": {
           "Measure": {
             "Expression": {

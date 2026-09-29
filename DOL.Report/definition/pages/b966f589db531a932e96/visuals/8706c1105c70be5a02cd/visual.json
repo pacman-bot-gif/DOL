@@ -164,6 +164,19 @@
             }
           }
         }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -225,7 +238,7 @@
         "howCreated": "User"
       },
       {
-        "name": "38f436a7bb0902ad220b",
+        "name": "59eacb564336608c7c70",
         "field": {
           "Column": {
             "Expression": {
@@ -239,7 +252,7 @@
         "type": "Categorical"
       },
       {
-        "name": "54911f89ed91ba902d1c",
+        "name": "a87ebdd3348c5d0cc204",
         "field": {
           "Measure": {
             "Expression": {

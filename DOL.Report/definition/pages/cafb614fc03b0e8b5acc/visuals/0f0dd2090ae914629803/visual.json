@@ -129,8 +129,95 @@
             }
           }
         }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b2ada66008b0244decb5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "service_type_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6d1aebb0e1073a0c4d77",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Tasks 2025"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "97537344d02d9b5a1500",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Tasks 2026"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ac862f3b4e91820386cd",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "YoY Change"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9608f5609a0eab08740d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "% YoY Growth"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
