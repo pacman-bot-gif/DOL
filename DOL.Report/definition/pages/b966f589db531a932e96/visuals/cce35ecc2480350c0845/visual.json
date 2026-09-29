@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "cce35ecc2480350c0845",
   "position": {
-    "x": 14.444444444444445,
-    "y": 631.48925096175617,
+    "x": 6.3636363636363633,
+    "y": 789.99999999999989,
     "z": 2000,
-    "height": 85,
-    "width": 340,
+    "height": 127.27272727272727,
+    "width": 466.36363636363632,
     "tabOrder": 2000
   },
   "visual": {
@@ -160,8 +160,39 @@
             "id": "default"
           }
         }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "08ec8ee0e77354d74ba4",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Cancel Rate อัตราการยกเลิก"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

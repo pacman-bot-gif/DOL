@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "5cb8f9427a6546a74030",
   "position": {
-    "x": 14.444444444444445,
-    "y": 527.37202987101159,
+    "x": 6.3636363636363633,
+    "y": 646.36363636363626,
     "z": 12000,
-    "height": 85.050916496945,
-    "width": 340.20366598778,
+    "height": 126.36363636363636,
+    "width": 466.36363636363632,
     "tabOrder": 12000
   },
   "visual": {
@@ -167,8 +167,39 @@
             "metadata": "DOL.Cancel Rate อัตราการยกเลิก"
           }
         }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "319d5de00dba569b301b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Doing Rate"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

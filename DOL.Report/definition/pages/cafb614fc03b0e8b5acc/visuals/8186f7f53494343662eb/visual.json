@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "8186f7f53494343662eb",
   "position": {
-    "x": 15.270413573700955,
-    "y": 617.94273594909862,
+    "x": 15.555555555555555,
+    "y": 910,
     "z": 0,
-    "height": 137.42331288343559,
-    "width": 289.57055214723925,
+    "height": 147.77777777777777,
+    "width": 456.66666666666663,
     "tabOrder": 0
   },
   "visual": {
@@ -36,6 +36,81 @@
       "sortDefinition": {
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "label": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'เปอร์เซ็นต์การเติบโต '"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "DOL.% YoY Growth"
+          }
+        },
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "value": [
+        {
+          "properties": {
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "30D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }

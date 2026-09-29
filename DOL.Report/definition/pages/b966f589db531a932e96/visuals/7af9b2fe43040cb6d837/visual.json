@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "7af9b2fe43040cb6d837",
   "position": {
-    "x": 14.444444444444445,
-    "y": 735.55555555555566,
+    "x": 6.3636363636363633,
+    "y": 933.63636363636351,
     "z": 11000,
-    "height": 85.050916496945,
-    "width": 340.20366598778,
+    "height": 127.27272727272727,
+    "width": 466.36363636363632,
     "tabOrder": 11000
   },
   "visual": {
@@ -59,6 +59,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "21D"
                 }
               }
             }
@@ -146,8 +153,39 @@
             "metadata": "Min(DOL.task_id)"
           }
         }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b8f8e77975b30c4807b0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "Success Rate"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
