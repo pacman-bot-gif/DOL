@@ -5364,6 +5364,119 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "dol.เปอร์เซ็นต์การเติบโต_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "เปอร์เซ็นต์การเติบโต_Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "เปอร์เซ็นต์การเติบโต display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต_Display": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต show": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต parade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "เปอร์เซ็นต์การเติบโต": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -5905,6 +6018,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendars_have_dols"
+			        }
+			      ]
+			    },
+			    "dol_has_เปอร์เซ็นต์การเติบโต_display": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.เปอร์เซ็นต์การเติบโต_display": {
+			          "Target": {
+			            "Entity": "dol.เปอร์เซ็นต์การเติบโต_display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.เปอร์เซ็นต์การเติบโต_display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_เปอร์เซ็นต์การเติบโต_display"
 			        }
 			      ]
 			    },

@@ -82,6 +82,14 @@ table DOL
 		formatString: #,0.00%;-#,0.00%;#,0.00%
 		lineageTag: c9830006-5b64-484c-88d4-0525fd1a8d5d
 
+	measure เปอร์เซ็นต์การเติบโต_Display =
+			
+			VAR GrowthVal = [% YoY Growth] -- เปลี่ยนเป็นชื่อ Measure เปอร์เซ็นต์เดิมของคุณ
+			VAR Arrow = IF(GrowthVal >= 0, "▲ ", "▼ ")
+			RETURN
+			    Arrow & FORMAT(GrowthVal, "0.00%")
+		lineageTag: 46d9309e-a5fd-4593-911e-8f00dbb48c45
+
 	column task_id
 		dataType: string
 		lineageTag: f1939569-8279-4610-91e9-6a7e4dade252

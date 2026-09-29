@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "0f0dd2090ae914629803",
   "position": {
-    "x": 345.11134676564154,
-    "y": 649.50159066808055,
+    "x": 1070.8814589665653,
+    "y": 606.93009118541033,
     "z": 6000,
-    "height": 355.29162248144218,
-    "width": 811.3679745493107,
+    "height": 398.2978723404255,
+    "width": 825.77507598784189,
     "tabOrder": 6000
   },
   "visual": {
@@ -92,8 +92,8 @@
                 }
               },
               "queryRef": "DOL.% YoY Growth",
-              "nativeQueryRef": "เปอร์เซ็นต์การเติบโต ",
-              "displayName": "เปอร์เซ็นต์การเติบโต "
+              "nativeQueryRef": "เปอร์เซ็นต์การเติบโต",
+              "displayName": "เปอร์เซ็นต์การเติบโต"
             }
           ]
         }
@@ -108,13 +108,66 @@
                     "Entity": "DOL"
                   }
                 },
-                "Property": "Tasks 2025"
+                "Property": "Tasks 2026"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridHorizontalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }

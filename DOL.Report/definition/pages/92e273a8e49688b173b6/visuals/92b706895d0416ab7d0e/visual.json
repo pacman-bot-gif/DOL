@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "a0dcb110040aca95a230",
+  "name": "92b706895d0416ab7d0e",
   "position": {
-    "x": 349.51145377715142,
-    "y": 34.749087017763273,
-    "z": 8000,
-    "height": 93.25153374233129,
-    "width": 321.96319018404904,
-    "tabOrder": 8000
+    "x": 405.59270516717322,
+    "y": 87.537993920972639,
+    "z": 18000,
+    "height": 83.161094224924014,
+    "width": 350.15197568389056,
+    "tabOrder": 18000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,35 +20,18 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Calendar"
+                      "Entity": "DOL"
                     }
                   },
-                  "Property": "MonthThai"
+                  "Property": "service_type_name"
                 }
               },
-              "queryRef": "Calendar.MonthThai",
-              "nativeQueryRef": "MonthThai",
+              "queryRef": "DOL.service_type_name",
+              "nativeQueryRef": "service_type_name",
               "active": true
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Calendar"
-                  }
-                },
-                "Property": "MonthThai"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -71,14 +54,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'เดือน'"
+                  "Value": "'ประเภทบริการ'"
                 }
               }
             },
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
                 }
               }
             },
@@ -103,7 +86,7 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
                 }
               }
             }
@@ -127,5 +110,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4edb307bb594d44d0840",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DOL"
+              }
+            },
+            "Property": "service_type_name"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

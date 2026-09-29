@@ -23,51 +23,19 @@
                       "Entity": "DOL"
                     }
                   },
-                  "Property": "% YoY Growth"
+                  "Property": "เปอร์เซ็นต์การเติบโต_Display"
                 }
               },
-              "queryRef": "DOL.% YoY Growth",
-              "nativeQueryRef": "% YoY Growth"
+              "queryRef": "DOL.เปอร์เซ็นต์การเติบโต_Display",
+              "nativeQueryRef": "เปอร์เซ็นต์การเติบโต",
+              "displayName": "เปอร์เซ็นต์การเติบโต"
             }
           ]
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "% YoY Growth"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
         "isDefaultSort": true
       }
-    },
-    "objects": {
-      "label": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'เปอร์เซ็นต์การเติบโต '"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "DOL.% YoY Growth"
-          }
-        }
-      ]
     },
     "drillFilterOtherVisuals": true
   }
