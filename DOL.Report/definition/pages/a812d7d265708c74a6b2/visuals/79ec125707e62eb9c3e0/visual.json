@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "79ec125707e62eb9c3e0",
   "position": {
-    "x": 450,
-    "y": 227.69230769230768,
+    "x": 731.25,
+    "y": 106.25,
     "z": 3000,
-    "height": 153.84615384615384,
-    "width": 430,
+    "height": 121.25,
+    "width": 385,
     "tabOrder": 3000
   },
   "visual": {
@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "สำเร็จ",
-              "displayName": "สำเร็จ"
+              "nativeQueryRef": "จำนวนคำขอที่เสร็จสิ้น",
+              "displayName": "จำนวนคำขอที่เสร็จสิ้น"
             }
           ]
         }
@@ -90,6 +90,17 @@
                   "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#56D584'"
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -117,7 +128,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "18D"
                 }
               }
             },
@@ -130,6 +141,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -226,20 +244,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "f6550437cb6916369c71",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

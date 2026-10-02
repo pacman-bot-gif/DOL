@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "b53bf78fb84c20d62805",
   "position": {
-    "x": 1052.1428571428571,
-    "y": 206.42857142857144,
-    "z": 6000,
-    "height": 419.28571428571433,
-    "width": 857.85714285714289,
-    "tabOrder": 6000
+    "x": 1128.5714285714287,
+    "y": 234.28571428571431,
+    "z": 3000,
+    "height": 377.14285714285717,
+    "width": 775.71428571428578,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "barChart",
@@ -229,7 +229,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#369057'"
+                      "Value": "'#56D584'"
                     }
                   }
                 }
@@ -270,8 +270,8 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 9,
-                      "Percent": 0
+                      "ColorId": 8,
+                      "Percent": 0.4
                     }
                   }
                 }
@@ -321,7 +321,33 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "18D"
+                  "Value": "15D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -369,51 +395,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "aa06cc7aed3553692d4e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "last_department_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "d369f62d2e30cb701b76",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_group_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "8a3d20b2d7aa8211c01c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -90,6 +90,18 @@ table DOL
 			    Arrow & FORMAT(GrowthVal, "0.00%")
 		lineageTag: 46d9309e-a5fd-4593-911e-8f00dbb48c45
 
+	measure '% YoY Growth Color' =
+			
+			VAR Growth = DIVIDE([Tasks 2026] - [Tasks 2025], [Tasks 2025])
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        Growth > 0, "#56D584",  -- สีเขียว (กรณีเติบโตเพิ่มขึ้น)
+			        Growth < 0, "#D64550",  -- สีแดง (กรณีติดลบ/ลดลง)
+			        "#424242"               -- สีเทาเข้ม (กรณีเท่ากับ 0)
+			    )
+		lineageTag: 0aecf594-1a28-45b1-86f3-a20b4ed1c42f
+
 	column task_id
 		dataType: string
 		lineageTag: f1939569-8279-4610-91e9-6a7e4dade252

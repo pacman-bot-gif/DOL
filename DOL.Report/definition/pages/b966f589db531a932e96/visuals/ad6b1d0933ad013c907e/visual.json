@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "ad6b1d0933ad013c907e",
   "position": {
-    "x": 488,
-    "y": 646,
+    "x": 334.28571428571433,
+    "y": 621.42857142857144,
     "z": 6000,
-    "height": 415,
-    "width": 703,
+    "height": 437.14285714285717,
+    "width": 782.85714285714289,
     "tabOrder": 6000
   },
   "visual": {
@@ -202,8 +202,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#FFCC00'"
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
                     }
                   }
                 }
@@ -329,7 +330,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
                 }
               }
             },
@@ -344,6 +345,32 @@
               "expr": {
                 "Literal": {
                   "Value": "'สัดส่วนสถานะการให้บริการจำแนกตามแผนกรับผิดชอบ'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -391,56 +418,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "951ed7f707920cec2190",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "last_department_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "67cd249c62dc8414e81b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_status_display"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "14c1202b080260404cc1",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "task_id"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

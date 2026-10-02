@@ -3944,6 +3944,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.485
 			          }
+			        },
+			        {
+			          "สถานะ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -4113,7 +4123,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "กำลังดำเนินการ": {
+			          "จำนวนคำขอที่กำลังดำเนินการ": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4123,7 +4133,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "สำเร็จ": {
+			          "จำนวนคำขอที่เสร็จสิ้น": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4133,7 +4143,17 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "ยกเลิก/ไม่สำเร็จ": {
+			          "จำนวนคำขอที่ยกเลิก": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "จำนวนคำขอทั้งหมด": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -5087,6 +5107,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "จำนวนการเข้าใช้บริการปี 2025": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "จำนวนการเข้าใช้บริการปี 2026": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "189917e6a9ebec897ec7",
   "position": {
-    "x": 486.36363636363632,
-    "y": 211.81818181818181,
-    "z": 3000,
-    "height": 413.63636363636363,
-    "width": 550,
-    "tabOrder": 3000
+    "x": 338.57142857142861,
+    "y": 234.28571428571431,
+    "z": 0,
+    "height": 377.14285714285717,
+    "width": 381.42857142857144,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "donutChart",
@@ -238,7 +238,33 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "18D"
+                  "Value": "15D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -286,37 +312,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6092c1240979e07d8a77",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "document_type_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6dca00a9c4d89d8b0137",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

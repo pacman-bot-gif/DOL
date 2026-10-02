@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "bef0521f93e476a7d139",
   "position": {
-    "x": 400,
-    "y": 215.55555555555554,
+    "x": 593.75,
+    "y": 199.375,
     "z": 13000,
-    "height": 333.33333333333331,
-    "width": 403.33333333333331,
+    "height": 252.5,
+    "width": 245.625,
     "tabOrder": 13000
   },
   "visual": {
-    "visualType": "donutChart",
+    "visualType": "pieChart",
     "query": {
       "queryState": {
         "Category": {
@@ -87,17 +87,11 @@
                   "Value": "'Data'"
                 }
               }
-            }
-          }
-        }
-      ],
-      "value": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
+            },
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "false"
                 }
               }
             }
@@ -229,6 +223,19 @@
             ]
           }
         }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -252,6 +259,34 @@
               "expr": {
                 "Literal": {
                   "Value": "'การเข้าใช้บริการตามช่วงเวลา'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -286,37 +321,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d4baa8c0006705c7e6d4",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "ช่วงเวลา"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "165efb27aae600b09d1d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

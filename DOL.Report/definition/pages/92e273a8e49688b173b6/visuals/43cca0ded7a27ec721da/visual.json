@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "43cca0ded7a27ec721da",
   "position": {
-    "x": 11.111111111111111,
-    "y": 215.55555555555554,
+    "x": 338.125,
+    "y": 199.375,
     "z": 14000,
-    "height": 333.33333333333331,
-    "width": 388.88888888888886,
+    "height": 252.5,
+    "width": 246.25,
     "tabOrder": 14000
   },
   "visual": {
-    "visualType": "donutChart",
+    "visualType": "pieChart",
     "query": {
       "queryState": {
         "Category": {
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.raw_result",
-              "nativeQueryRef": "raw_result",
-              "active": true
+              "nativeQueryRef": "สถานะ",
+              "active": true,
+              "displayName": "สถานะ"
             }
           ]
         },
@@ -87,17 +88,11 @@
                   "Value": "'Data'"
                 }
               }
-            }
-          }
-        }
-      ],
-      "value": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
+            },
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "false"
                 }
               }
             }
@@ -228,6 +223,30 @@
               }
             ]
           }
+        },
+        {
+          "properties": {
+            "borderTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -252,6 +271,34 @@
               "expr": {
                 "Literal": {
                   "Value": "'สถานะการรับบริการ'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -286,37 +333,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d64e362b3339073e2b4e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "raw_result"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "d4fc1aeb9b01768c7287",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

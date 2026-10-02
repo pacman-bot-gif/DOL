@@ -31,7 +31,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "true"
+                "Value": "false"
               }
             }
           }
@@ -56,28 +56,28 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "Document_&_Workload_Profiling5759876914903543.png",
-          "path": "Document_&_Workload_Profiling5759876914903543.png",
+          "name": "Graphic___________(3)9578947717596492.png",
+          "path": "Graphic___________(3)9578947717596492.png",
           "type": "Image"
         },
         {
-          "name": "Overview06597514552321548.png",
-          "path": "Overview06597514552321548.png",
+          "name": "Graphic___________(4)28433666533562196.png",
+          "path": "Graphic___________(4)28433666533562196.png",
           "type": "Image"
         },
         {
-          "name": "Process_Analysis23013550872872635.png",
-          "path": "Process_Analysis23013550872872635.png",
+          "name": "Graphic___________(5)1109705621617767.png",
+          "path": "Graphic___________(5)1109705621617767.png",
           "type": "Image"
         },
         {
-          "name": "Service34210119749776746.png",
-          "path": "Service34210119749776746.png",
+          "name": "Graphic___________(6)0961785386937748.png",
+          "path": "Graphic___________(6)0961785386937748.png",
           "type": "Image"
         },
         {
-          "name": "YOY005835891289445061.png",
-          "path": "YOY005835891289445061.png",
+          "name": "Graphic__________15147708905498058.png",
+          "path": "Graphic__________15147708905498058.png",
           "type": "Image"
         }
       ]

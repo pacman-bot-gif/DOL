@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "f3daefbea522c1887080",
   "position": {
-    "x": 5.80060422960725,
-    "y": 506.10271903323263,
+    "x": 855.38461538461536,
+    "y": 103.07692307692308,
     "z": 4000,
-    "height": 127.61329305135952,
-    "width": 466.94864048338371,
+    "height": 127.69230769230769,
+    "width": 260.76923076923077,
     "tabOrder": 4000
   },
   "visual": {
@@ -82,7 +82,33 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "35D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
+                    }
+                  }
                 }
               }
             }
@@ -136,6 +162,18 @@
                   "Value": "true"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -147,21 +185,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'งานที่ไม่แล้วเสร็จในวันเดียว'"
+                  "Value": "'งานที่ไม่เสร็จในวันเดียว'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
                 }
               }
             },
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -308,25 +346,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "72b346ea46c3d6b90c63",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "service_group_name"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

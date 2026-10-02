@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "2c5befe719210c43693e",
   "position": {
-    "x": 14.589665653495441,
-    "y": 393.92097264437689,
-    "z": 3000,
-    "height": 153.19148936170214,
-    "width": 458.11550151975683,
-    "tabOrder": 3000
+    "x": 337.14285714285717,
+    "y": 102.85714285714286,
+    "z": 2000,
+    "height": 128.57142857142858,
+    "width": 382.85714285714289,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -61,6 +61,31 @@
                   "Value": "1D"
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#56D584'"
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -101,6 +126,13 @@
                   "Value": "30D"
                 }
               }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
             }
           },
           "selector": {
@@ -115,6 +147,32 @@
               "expr": {
                 "Literal": {
                   "Value": "'จำนวนการเข้าใช้บริการปี 2026'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -188,23 +246,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ca87f6ea80bc891172ed",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "Tasks 2026"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

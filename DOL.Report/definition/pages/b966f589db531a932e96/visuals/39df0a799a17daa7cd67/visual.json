@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "39df0a799a17daa7cd67",
   "position": {
-    "x": 6.3636363636363633,
-    "y": 365.45454545454544,
+    "x": 598.57142857142856,
+    "y": 102.85714285714286,
     "z": 3000,
-    "height": 126.36363636363636,
-    "width": 466.36363636363632,
+    "height": 125.71428571428572,
+    "width": 257.14285714285717,
     "tabOrder": 3000
   },
   "visual": {
@@ -82,7 +82,32 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "35D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#56D584'"
+                    }
+                  }
                 }
               }
             }
@@ -113,6 +138,17 @@
                   "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#56D584'"
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -136,6 +172,25 @@
                   "Value": "true"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
+                }
+              }
             }
           },
           "selector": {
@@ -147,21 +202,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'งานแล้วเสร็จในวันเดียว'"
+                  "Value": "'งานที่เสร็จในวันเดียว'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
                 }
               }
             },
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -308,25 +363,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "086d6ad0d088aaa2bb94",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DOL"
-                  }
-                },
-                "Property": "service_group_name"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
       }
     ],
     "filterSortOrder": "Custom"

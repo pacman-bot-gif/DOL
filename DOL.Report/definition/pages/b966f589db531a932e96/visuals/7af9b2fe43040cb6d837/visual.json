@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "7af9b2fe43040cb6d837",
   "position": {
-    "x": 6.3636363636363633,
-    "y": 933.63636363636351,
+    "x": 1390,
+    "y": 102.85714285714286,
     "z": 11000,
-    "height": 127.27272727272727,
-    "width": 466.36363636363632,
+    "height": 127.14285714285715,
+    "width": 252.14285714285717,
     "tabOrder": 11000
   },
   "visual": {
@@ -68,6 +68,17 @@
                   "Value": "21D"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#56D584'"
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -86,7 +97,21 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "35D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -109,14 +134,26 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
                 }
               }
             },
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -185,23 +222,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "307a5b928b4eec51d29b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "Success Rate"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

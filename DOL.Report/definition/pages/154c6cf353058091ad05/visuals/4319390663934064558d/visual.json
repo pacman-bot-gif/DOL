@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "4319390663934064558d",
   "position": {
-    "x": 0,
-    "y": 427.05882352941177,
-    "z": 9000,
-    "height": 91.17647058823529,
-    "width": 470,
-    "tabOrder": 9000
+    "x": 1128.3333333333335,
+    "y": 104.16666666666667,
+    "z": 6000,
+    "height": 122.5,
+    "width": 381.66666666666669,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -89,21 +89,32 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "50D"
                 }
               }
             },
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'wf_standard-font, helvetica, arial, sans-serif'"
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#56D584'"
+                    }
+                  }
                 }
               }
             }
@@ -119,21 +130,33 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'งานเสร็จวันเดียว'"
+                  "Value": "'งานที่เสร็จในวันเดียว'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "18D"
                 }
               }
             },
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

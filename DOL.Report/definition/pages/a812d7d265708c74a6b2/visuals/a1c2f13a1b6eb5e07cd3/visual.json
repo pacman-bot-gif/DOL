@@ -3,10 +3,10 @@
   "name": "a1c2f13a1b6eb5e07cd3",
   "position": {
     "x": 0,
-    "y": 101.53846153846153,
+    "y": 441.25,
     "z": 7000,
-    "height": 117.5,
-    "width": 908.75,
+    "height": 75,
+    "width": 323.125,
     "tabOrder": 7000
   },
   "visual": {
@@ -138,6 +138,20 @@
                       "Value": "'#01673F'"
                     }
                   }
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }

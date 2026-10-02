@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "adfabcbf0520b1e473a0",
   "position": {
-    "x": 453.84615384615381,
-    "y": 401.53846153846155,
+    "x": 1522.8571428571429,
+    "y": 107.14285714285715,
     "z": 5000,
-    "height": 156.92307692307691,
-    "width": 430,
+    "height": 120.00000000000001,
+    "width": 381.42857142857144,
     "tabOrder": 5000
   },
   "visual": {
@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "ยกเลิก/ไม่สำเร็จ",
-              "displayName": "ยกเลิก/ไม่สำเร็จ"
+              "nativeQueryRef": "จำนวนคำขอที่ยกเลิก",
+              "displayName": "จำนวนคำขอที่ยกเลิก"
             }
           ]
         }
@@ -90,6 +90,18 @@
                   "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -117,7 +129,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "18D"
                 }
               }
             },
@@ -132,10 +144,31 @@
                   }
                 }
               }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           },
           "selector": {
             "metadata": "DOL.จำนวนรวม"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
@@ -226,20 +259,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "165bab3f638c901c295d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

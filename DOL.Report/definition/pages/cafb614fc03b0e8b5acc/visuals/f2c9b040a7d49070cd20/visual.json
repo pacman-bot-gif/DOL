@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "f2c9b040a7d49070cd20",
   "position": {
-    "x": 1230,
-    "y": 112,
-    "z": 5000,
-    "height": 461,
-    "width": 676,
-    "tabOrder": 5000
+    "x": 336.66666666666669,
+    "y": 231.66666666666669,
+    "z": 4000,
+    "height": 381.66666666666669,
+    "width": 783.33333333333337,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -117,7 +117,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#369057'"
+                      "Value": "'#56D584'"
                     }
                   }
                 }
@@ -157,8 +157,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#FFCC00'"
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
                     }
                   }
                 }
@@ -202,6 +203,20 @@
               "expr": {
                 "Literal": {
                   "Value": "'ปริมาณคำขอจำแนกตามประเภทบริการ เปรียบเทียบปี (2025 vs 2026)'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
             }
@@ -249,51 +264,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "af835dc1a7a20bed591e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_type_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "5bbaaba58713b9532a0b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0f54d30300b0eda96990",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

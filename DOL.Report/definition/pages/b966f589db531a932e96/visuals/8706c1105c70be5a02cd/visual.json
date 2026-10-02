@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "8706c1105c70be5a02cd",
   "position": {
-    "x": 1206,
-    "y": 220,
+    "x": 1127.1428571428571,
+    "y": 235.71428571428572,
     "z": 7000,
-    "height": 419,
-    "width": 704,
+    "height": 371.42857142857144,
+    "width": 772.85714285714289,
     "tabOrder": 7000
   },
   "visual": {
@@ -85,6 +85,13 @@
               "expr": {
                 "Literal": {
                   "Value": "11D"
+                }
+              }
+            },
+            "labelStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Data'"
                 }
               }
             }
@@ -217,7 +224,33 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -308,34 +341,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "59eacb564336608c7c70",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_type_name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a87ebdd3348c5d0cc204",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "0e206fb25c05db18083d",
   "position": {
-    "x": 6.9230769230769225,
-    "y": 401.53846153846155,
+    "x": 1128.5714285714287,
+    "y": 107.14285714285715,
     "z": 4000,
-    "height": 156.92307692307691,
-    "width": 433.84615384615381,
+    "height": 120.00000000000001,
+    "width": 381.42857142857144,
     "tabOrder": 4000
   },
   "visual": {
@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "กำลังดำเนินการ",
-              "displayName": "กำลังดำเนินการ"
+              "nativeQueryRef": "จำนวนคำขอที่กำลังดำเนินการ",
+              "displayName": "จำนวนคำขอที่กำลังดำเนินการ"
             }
           ]
         }
@@ -104,6 +104,18 @@
                   "Value": "false"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -117,7 +129,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "18D"
                 }
               }
             },
@@ -136,6 +148,20 @@
           },
           "selector": {
             "metadata": "DOL.จำนวนรวม"
+          }
+        },
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
@@ -226,20 +252,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "adcff7e502a9182046db",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

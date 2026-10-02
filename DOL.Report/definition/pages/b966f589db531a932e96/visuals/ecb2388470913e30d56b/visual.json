@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "ecb2388470913e30d56b",
   "position": {
-    "x": 488,
-    "y": 224,
+    "x": 334.28571428571433,
+    "y": 235.71428571428572,
     "z": 5000,
-    "height": 410,
-    "width": 703,
+    "height": 371.42857142857144,
+    "width": 782.85714285714289,
     "tabOrder": 5000
   },
   "visual": {
@@ -335,8 +335,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#FFCC00'"
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
                     }
                   }
                 }
@@ -399,7 +400,33 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "15D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -434,51 +461,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "7c34c4405581043cd0aa",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "Process_Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "feff6debe69ad475112a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "service_status_display"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "518c75034003907143b6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DOL"
-              }
-            },
-            "Property": "จำนวนรวม"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
