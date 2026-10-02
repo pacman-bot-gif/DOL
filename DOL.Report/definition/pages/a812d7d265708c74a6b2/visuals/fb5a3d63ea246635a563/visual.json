@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "fb5a3d63ea246635a563",
   "position": {
-    "x": 0,
-    "y": 540,
-    "z": 8001,
-    "height": 52.857142857142861,
-    "width": 322.85714285714289,
-    "tabOrder": 8001
+    "x": 6.5306122448979593,
+    "y": 588.57142857142856,
+    "z": 9000,
+    "height": 72.857142857142861,
+    "width": 310,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "slicer",
@@ -17,28 +17,17 @@
           "projections": [
             {
               "field": {
-                "HierarchyLevel": {
+                "Column": {
                   "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Calendar"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "Date"
-                        }
-                      },
-                      "Hierarchy": "Date Hierarchy"
+                    "SourceRef": {
+                      "Entity": "Calendar"
                     }
                   },
-                  "Level": "Month"
+                  "Property": "MonthThai"
                 }
               },
-              "queryRef": "Calendar.Date.Variation.Date Hierarchy.Month",
-              "nativeQueryRef": "Date Month",
+              "queryRef": "Calendar.MonthThai",
+              "nativeQueryRef": "MonthThai",
               "active": true
             }
           ]
@@ -102,7 +91,47 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'เดือน'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
             }

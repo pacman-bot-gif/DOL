@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "ccd32e5f1aeae4614d2a",
   "position": {
-    "x": 337.83251231527095,
-    "y": 106.4039408866995,
-    "z": 17000,
-    "height": 87.783251231527089,
-    "width": 501.42857142857139,
-    "tabOrder": 17000
+    "x": 337.33333333333331,
+    "y": 96,
+    "z": 16000,
+    "height": 98,
+    "width": 501.33333333333331,
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -199,6 +199,46 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ช่วงเวลาข้อมูล'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
                 }
               }
             }

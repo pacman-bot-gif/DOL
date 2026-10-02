@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Graphic กรมที่ดิน.png'"
+                    "Value": "'4.png'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Graphic__________15147708905498058.png"
+                    "ItemName": "413944792897141656.png"
                   }
                 }
               },

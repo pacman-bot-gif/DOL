@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "Calendar.MonthThai",
-              "nativeQueryRef": "MonthThai",
-              "active": true
+              "nativeQueryRef": "เดือน",
+              "active": true,
+              "displayName": "เดือน"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "Calendar.Year",
-              "nativeQueryRef": "Sum of Year"
+              "nativeQueryRef": "ปี",
+              "displayName": "ปี"
             }
           ]
         },
@@ -64,7 +66,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -91,6 +94,18 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

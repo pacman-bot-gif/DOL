@@ -3,10 +3,10 @@
   "name": "9e2c920466553930d391",
   "position": {
     "x": 0,
-    "y": 85,
+    "y": 8.5714285714285712,
     "z": 8000,
-    "height": 333.75,
-    "width": 328.75,
+    "height": 440,
+    "width": 328.57142857142861,
     "tabOrder": 8000
   },
   "visual": {
@@ -25,7 +25,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "3L"
+                  "Value": "10L"
                 }
               }
             }

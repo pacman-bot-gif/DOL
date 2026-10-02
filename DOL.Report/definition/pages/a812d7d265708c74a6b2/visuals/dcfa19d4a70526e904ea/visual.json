@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.วันในสัปดาห์",
-              "nativeQueryRef": "วันในสัปดาห์",
-              "active": true
+              "nativeQueryRef": "วัน",
+              "active": true,
+              "displayName": "วัน"
             }
           ]
         },

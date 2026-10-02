@@ -4,10 +4,10 @@
   "position": {
     "x": 338.75,
     "y": 458.75,
-    "z": 16000,
+    "z": 15000,
     "height": 285,
     "width": 500,
-    "tabOrder": 16000
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "Calendar.DayThai",
-              "nativeQueryRef": "DayThai",
-              "active": true
+              "nativeQueryRef": "วัน",
+              "active": true,
+              "displayName": "วัน"
             }
           ]
         },
@@ -64,7 +65,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -119,8 +121,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#FFCC00'"
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
                     }
                   }
                 }

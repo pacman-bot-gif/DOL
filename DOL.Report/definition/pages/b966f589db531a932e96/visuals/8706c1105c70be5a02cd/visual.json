@@ -4,10 +4,10 @@
   "position": {
     "x": 1127.1428571428571,
     "y": 235.71428571428572,
-    "z": 7000,
+    "z": 5000,
     "height": 371.42857142857144,
     "width": 772.85714285714289,
-    "tabOrder": 7000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "donutChart",
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.service_type_name",
-              "nativeQueryRef": "service_type_name",
-              "active": true
+              "nativeQueryRef": "ประเภท",
+              "active": true,
+              "displayName": "ประเภท"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -105,6 +107,18 @@
               "expr": {
                 "Literal": {
                   "Value": "12D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

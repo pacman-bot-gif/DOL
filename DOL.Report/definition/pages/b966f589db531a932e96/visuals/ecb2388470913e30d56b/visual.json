@@ -4,10 +4,10 @@
   "position": {
     "x": 334.28571428571433,
     "y": 235.71428571428572,
-    "z": 5000,
+    "z": 3000,
     "height": 371.42857142857144,
     "width": 782.85714285714289,
-    "tabOrder": 5000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.Process_Name",
-              "nativeQueryRef": "Process_Name",
-              "active": true
+              "nativeQueryRef": "กระบวนการทำงาน",
+              "active": true,
+              "displayName": "กระบวนการทำงาน"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "DOL.service_status_display",
-              "nativeQueryRef": "service_status_display"
+              "nativeQueryRef": "สถานะ",
+              "displayName": "สถานะ"
             }
           ]
         },
@@ -64,7 +66,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -239,6 +242,18 @@
               "expr": {
                 "Literal": {
                   "Value": "13D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

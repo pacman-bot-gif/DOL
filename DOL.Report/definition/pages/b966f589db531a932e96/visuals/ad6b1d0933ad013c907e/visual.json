@@ -4,10 +4,10 @@
   "position": {
     "x": 334.28571428571433,
     "y": 621.42857142857144,
-    "z": 6000,
+    "z": 4000,
     "height": 437.14285714285717,
     "width": 782.85714285714289,
-    "tabOrder": 6000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "hundredPercentStackedBarChart",
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.last_department_name",
-              "nativeQueryRef": "last_department_name",
-              "active": true
+              "nativeQueryRef": "แผนก",
+              "active": true,
+              "displayName": "แผนก"
             }
           ]
         },
@@ -42,11 +43,12 @@
                       "Entity": "DOL"
                     }
                   },
-                  "Property": "service_status_display"
+                  "Property": "result thai"
                 }
               },
-              "queryRef": "DOL.service_status_display",
-              "nativeQueryRef": "service_status_display"
+              "queryRef": "DOL.result thai",
+              "nativeQueryRef": "สถานะ",
+              "displayName": "สถานะ"
             }
           ]
         },
@@ -54,22 +56,18 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DOL"
-                        }
-                      },
-                      "Property": "task_id"
+                    "SourceRef": {
+                      "Entity": "DOL"
                     }
                   },
-                  "Function": 5
+                  "Property": "จำนวนรวม"
                 }
               },
-              "queryRef": "CountNonNull(DOL.task_id)",
-              "nativeQueryRef": "task_id"
+              "queryRef": "DOL.จำนวนรวม",
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -78,18 +76,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "DOL"
-                      }
-                    },
-                    "Property": "task_id"
+                  "SourceRef": {
+                    "Entity": "DOL"
                   }
                 },
-                "Function": 5
+                "Property": "จำนวนรวม"
               }
             },
             "direction": "Descending"
@@ -189,6 +182,18 @@
               "expr": {
                 "Literal": {
                   "Value": "13D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -313,6 +318,131 @@
                     "Right": {
                       "Literal": {
                         "Value": "'สำเร็จ'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2EBA84'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "result thai"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'เสร็จสิ้น'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "result thai"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'กำลังดำเนินการ'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "result thai"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ยกเลิก'"
                       }
                     }
                   }

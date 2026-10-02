@@ -4,10 +4,10 @@
   "position": {
     "x": 338.125,
     "y": 199.375,
-    "z": 14000,
+    "z": 13000,
     "height": 252.5,
     "width": 246.25,
-    "tabOrder": 14000
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "pieChart",
@@ -23,10 +23,10 @@
                       "Entity": "DOL"
                     }
                   },
-                  "Property": "raw_result"
+                  "Property": "result thai"
                 }
               },
-              "queryRef": "DOL.raw_result",
+              "queryRef": "DOL.result thai",
               "nativeQueryRef": "สถานะ",
               "active": true,
               "displayName": "สถานะ"
@@ -233,6 +233,131 @@
                 }
               }
             }
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "result thai"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'กำลังดำเนินการ'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 9,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "result thai"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'ยกเลิก'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2EBA84'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "DOL"
+                          }
+                        },
+                        "Property": "result thai"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'เสร็จสิ้น'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       ],

@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "Calendar.MonthThai",
-              "nativeQueryRef": "MonthThai",
-              "active": true
+              "nativeQueryRef": "เดือน",
+              "active": true,
+              "displayName": "เดือน"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "DOL.service_group_name",
-              "nativeQueryRef": "service_group_name"
+              "nativeQueryRef": "ประเภทกลุ่มงาน",
+              "displayName": "ประเภทกลุ่มงาน"
             }
           ]
         },
@@ -54,22 +56,18 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DOL"
-                        }
-                      },
-                      "Property": "task_id"
+                    "SourceRef": {
+                      "Entity": "DOL"
                     }
                   },
-                  "Function": 5
+                  "Property": "จำนวนรวม"
                 }
               },
-              "queryRef": "CountNonNull(DOL.task_id)",
-              "nativeQueryRef": "Count of task_id"
+              "queryRef": "DOL.จำนวนรวม",
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -103,6 +101,18 @@
               "expr": {
                 "Literal": {
                   "Value": "12D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

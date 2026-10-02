@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.service_type_name",
-              "nativeQueryRef": "service_type_name",
-              "active": true
+              "nativeQueryRef": "ประเภทการให้บริการ",
+              "active": true,
+              "displayName": "ประเภทการให้บริการ"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "Calendar.Year",
-              "nativeQueryRef": "Sum of Year"
+              "nativeQueryRef": "ปี",
+              "displayName": "ปี"
             }
           ]
         },
@@ -64,7 +66,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -191,6 +194,24 @@
                 }
               }
             ]
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       ]

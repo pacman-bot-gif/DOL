@@ -414,6 +414,14 @@ table DOL
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'result thai' =
+			
+			SWITCH(DOL[raw_result],"cancel","ยกเลิก","doing","กำลังดำเนินการ","success","เสร็จสิ้น")
+		lineageTag: 01d7480a-6cb4-4cba-b2e7-2f38e6d6cfb1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition DOL = m
 		mode: import
 		source =

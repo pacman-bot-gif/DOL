@@ -1011,6 +1011,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "ประเภทกลุ่มงาน": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "กลุ่มงาน": {
 			            "State": "Suggested",
 			            "Source": {
@@ -1303,7 +1313,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "ประเภท": {
+			          "ประเภทการให้บริการ": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1314,6 +1324,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "ประเภทบริการ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "ประเภท": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -3068,6 +3088,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.491
 			          }
+			        },
+			        {
+			          "กระบวนการทำงาน": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -3944,16 +3974,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.485
 			          }
-			        },
-			        {
-			          "สถานะ": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -4083,6 +4103,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.6
 			          }
+			        },
+			        {
+			          "สถานะ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -4143,6 +4173,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "จำนวน": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "จำนวนคำขอที่ยกเลิก": {
 			            "State": "Suggested",
 			            "Source": {
@@ -4154,16 +4194,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "จำนวนคำขอทั้งหมด": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "จำนวน": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -4186,6 +4216,16 @@ cultureInfo en-US
 			        {
 			          "วันในสัปดาห์": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "วัน": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4504,6 +4544,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "ปี": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -4930,6 +4980,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.6
 			          }
+			        },
+			        {
+			          "เดือน": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -4958,6 +5018,16 @@ cultureInfo en-US
 			          "thai": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "วัน": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -5517,6 +5587,134 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "dol.YoY_growth_color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "% YoY Growth Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% YoY growth color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage yoy growth color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct yoy growth color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "% yoy growth hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "% yoy growth tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "% yoy growth shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "% yoy growth dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "% yoy growth paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "% yoy growth pigment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "dol.result_thai": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DOL",
+			          "ConceptualProperty": "result thai"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "result thai": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "thai": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "สถานะ": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -6058,6 +6256,72 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendars_have_dols"
+			        }
+			      ]
+			    },
+			    "dol_has_result_thai": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.result_thai": {
+			          "Target": {
+			            "Entity": "dol.result_thai"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.result_thai"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have_result_thai"
+			        }
+			      ]
+			    },
+			    "dol_has_YoY_growth_color": {
+			      "Binding": {
+			        "ConceptualEntity": "DOL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dol": {
+			          "Target": {
+			            "Entity": "dol"
+			          }
+			        },
+			        "dol.YoY_growth_color": {
+			          "Target": {
+			            "Entity": "dol.YoY_growth_color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dol"
+			            },
+			            "Object": {
+			              "Role": "dol.YoY_growth_color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dols_have__YoY_growth_color"
 			        }
 			      ]
 			    },

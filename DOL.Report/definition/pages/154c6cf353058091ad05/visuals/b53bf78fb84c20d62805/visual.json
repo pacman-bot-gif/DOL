@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.last_department_name",
-              "nativeQueryRef": "last_department_name",
-              "active": true
+              "nativeQueryRef": "แผนก",
+              "active": true,
+              "displayName": "แผนก"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "DOL.service_group_name",
-              "nativeQueryRef": "service_group_name"
+              "nativeQueryRef": "ประเภทกลุ่มงาน",
+              "displayName": "ประเภทกลุ่มงาน"
             }
           ]
         },
@@ -64,7 +66,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -215,6 +218,18 @@
               "expr": {
                 "Literal": {
                   "Value": "14D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

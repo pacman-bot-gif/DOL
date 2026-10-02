@@ -27,9 +27,9 @@
                 }
               },
               "queryRef": "DOL.service_type_name",
-              "nativeQueryRef": "ประเภท",
+              "nativeQueryRef": "ประเภทการให้บริการ",
               "active": true,
-              "displayName": "ประเภท"
+              "displayName": "ประเภทการให้บริการ"
             }
           ]
         },
@@ -47,7 +47,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }

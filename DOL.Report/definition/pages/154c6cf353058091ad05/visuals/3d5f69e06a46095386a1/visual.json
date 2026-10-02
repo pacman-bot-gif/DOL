@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.service_group_name",
-              "nativeQueryRef": "service_group_name",
-              "active": true
+              "nativeQueryRef": "ประเภทกลุ่มงาน",
+              "active": true,
+              "displayName": "ประเภทกลุ่มงาน"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -186,6 +188,18 @@
               "expr": {
                 "Literal": {
                   "Value": "'Bottom'"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

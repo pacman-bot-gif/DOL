@@ -4,10 +4,10 @@
   "position": {
     "x": 593.75,
     "y": 199.375,
-    "z": 13000,
+    "z": 12000,
     "height": 252.5,
     "width": 245.625,
-    "tabOrder": 13000
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "pieChart",
@@ -146,8 +146,9 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#FFCC00'"
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.4
                     }
                   }
                 }

@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "DOL.document_type_name",
-              "nativeQueryRef": "document_type_name",
-              "active": true
+              "nativeQueryRef": "ประเภทเอกสาร",
+              "active": true,
+              "displayName": "ประเภทเอกสาร"
             }
           ]
         },
@@ -46,7 +47,8 @@
                 }
               },
               "queryRef": "DOL.จำนวนรวม",
-              "nativeQueryRef": "จำนวนรวม"
+              "nativeQueryRef": "จำนวน",
+              "displayName": "จำนวน"
             }
           ]
         }
@@ -145,6 +147,18 @@
               "expr": {
                 "Literal": {
                   "Value": "14D"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
